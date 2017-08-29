@@ -1,0 +1,12 @@
+{
+    "title": "swagchat SDK",
+    "links": {
+        "sidebar": {
+            "コンタクト": "https://www.gitbook.com/contact",
+            "コンタクト2": "https://www.gitbook.com/contact"
+        }
+    },
+    "styles": {
+        "website": "website.css"
+    }
+}
