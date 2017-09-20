@@ -1,0 +1,1336 @@
+
+<!DOCTYPE HTML>
+<html lang="jp" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>シンプルメッセンジャー · swagchat SDK</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../nodejs/" />
+    
+    
+    <link rel="prev" href="messenger.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    はじめに
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../start-guide.html">
+            
+                <a href="../../../start-guide.html">
+            
+                    
+                    スタートガイド
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../../quick-start/">
+            
+                <a href="../../../quick-start/">
+            
+                    
+                    クイックスタート
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../../quick-start/local.html">
+            
+                <a href="../../../quick-start/local.html">
+            
+                    
+                    ローカル環境で起動
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../../quick-start/paas.html">
+            
+                <a href="../../../quick-start/paas.html">
+            
+                    
+                    PaaSで起動
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../../production-deploy.html">
+            
+                <a href="../../../production-deploy.html">
+            
+                    
+                    プロダクションデプロイ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    Chat API
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../../chat-api/">
+            
+                <a href="../../../chat-api/">
+            
+                    
+                    概要
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../../../chat-api/launch.html">
+            
+                <a href="../../../chat-api/launch.html">
+            
+                    
+                    起動方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../../../chat-api/reference.html">
+            
+                <a href="../../../chat-api/reference.html">
+            
+                    
+                    リファレンス
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../../../chat-api/settings.html">
+            
+                <a href="../../../chat-api/settings.html">
+            
+                    
+                    設定
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.4.1" data-path="../../../chat-api/settings.html">
+            
+                <a href="../../../chat-api/settings.html#port">
+            
+                    
+                    port
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.2" data-path="../../../chat-api/settings.html">
+            
+                <a href="../../../chat-api/settings.html#profiling">
+            
+                    
+                    profiling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.3" data-path="../../../chat-api/settings.html">
+            
+                <a href="../../../chat-api/settings.html#errorlogging">
+            
+                    
+                    errorLogging
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.4" data-path="../../../chat-api/settings.html">
+            
+                <a href="../../../chat-api/settings.html#logginglevel">
+            
+                    
+                    logging.level
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5" >
+            
+                <span>
+            
+                    
+                    storage
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.4.5.1" data-path="../../../chat-api/settings.html">
+            
+                <a href="../../../chat-api/settings.html#storageprovider">
+            
+                    
+                    provider
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5.2" data-path="../../../chat-api/settings.html">
+            
+                <a href="../../../chat-api/settings.html#storagebaseUrl">
+            
+                    
+                    baseUrl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5.3" data-path="../../../chat-api/settings.html">
+            
+                <a href="../../../chat-api/settings.html#storagelocalpath">
+            
+                    
+                    localPath
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5.4" data-path="../../../chat-api/settings.html">
+            
+                <a href="../../../chat-api/settings.html#storageuploadbucket">
+            
+                    
+                    uploadBucket
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5.5" data-path="../../../chat-api/settings.html">
+            
+                <a href="../../../chat-api/settings.html#storageuploaddirectory">
+            
+                    
+                    uploadDirectory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5.6" data-path="../../../chat-api/settings.html">
+            
+                <a href="../../../chat-api/settings.html#storagethumbnailbucket">
+            
+                    
+                    thumbnailBucket
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5.7" data-path="../../../chat-api/settings.html">
+            
+                <a href="../../../chat-api/settings.html#storagethumbnaildirectory">
+            
+                    
+                    thumbnailDirectory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5.8" data-path="../../../chat-api/settings.html">
+            
+                <a href="../../../chat-api/settings.html#storagegcpprojectid">
+            
+                    
+                    gcpProjectId
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5.9" data-path="../../../chat-api/settings.html">
+            
+                <a href="../../../chat-api/settings.html#storagegcpjwtpath">
+            
+                    
+                    gcpJwtPath
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5.10" data-path="../../../chat-api/settings.html">
+            
+                <a href="../../../chat-api/settings.html#storageawsregion">
+            
+                    
+                    awsRegion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5.11" data-path="../../../chat-api/settings.html">
+            
+                <a href="../../../chat-api/settings.html#storageawsaccesskeyid">
+            
+                    
+                    awsAccessKeyId
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5.12" data-path="../../../chat-api/settings.html">
+            
+                <a href="../../../chat-api/settings.html#storageawssecretaccesskey">
+            
+                    
+                    awsSecretAccessKey
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <span>
+            
+                    
+                    RTM API
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../../../rtm-api/">
+            
+                <a href="../../../rtm-api/">
+            
+                    
+                    概要
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../../../rtm-api/launch.html">
+            
+                <a href="../../../rtm-api/launch.html">
+            
+                    
+                    起動方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" >
+            
+                <span>
+            
+                    
+                    SDK
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../../../sdk/">
+            
+                <a href="../../../sdk/">
+            
+                    
+                    概要
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../../../sdk/install.html">
+            
+                <a href="../../../sdk/install.html">
+            
+                    
+                    インストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" >
+            
+                <span>
+            
+                    
+                    UIKit
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    概要
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    タグを設置して動かす
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.2.1" data-path="messenger.html">
+            
+                <a href="messenger.html">
+            
+                    
+                    メッセンジャー
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.1.2.2" data-path="simple-messenger.html">
+            
+                <a href="simple-messenger.html">
+            
+                    
+                    シンプルメッセンジャー
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" data-path="../../nodejs/">
+            
+                <a href="../../nodejs/">
+            
+                    
+                    チャットアプリケーションを組み込む
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.3.1" data-path="../../nodejs/install.html">
+            
+                <a href="../../nodejs/install.html">
+            
+                    
+                    インストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2" data-path="../../nodejs/reference/">
+            
+                <a href="../../nodejs/reference/">
+            
+                    
+                    リファレンス
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.3.2.1" data-path="../../nodejs/reference/ApplicationComponent/">
+            
+                <a href="../../nodejs/reference/ApplicationComponent/">
+            
+                    
+                    アプリケーションコンポーネント
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.3.2.1.1" data-path="../../nodejs/reference/ApplicationComponent/Messenger.html">
+            
+                <a href="../../nodejs/reference/ApplicationComponent/Messenger.html">
+            
+                    
+                    Messenger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.1.2" data-path="../../nodejs/reference/ApplicationComponent/SimpleMessenger.html">
+            
+                <a href="../../nodejs/reference/ApplicationComponent/SimpleMessenger.html">
+            
+                    
+                    SimpleMessenger
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.2" data-path="../../nodejs/reference/ContainerComponent/">
+            
+                <a href="../../nodejs/reference/ContainerComponent/">
+            
+                    
+                    コンテナーコンポーネント
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.3.2.2.1" data-path="../../nodejs/reference/ContainerComponent/MessagePage.html">
+            
+                <a href="../../nodejs/reference/ContainerComponent/MessagePage.html">
+            
+                    
+                    MessagePage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.2.2" data-path="../../nodejs/reference/ContainerComponent/RoomListPage.html">
+            
+                <a href="../../nodejs/reference/ContainerComponent/RoomListPage.html">
+            
+                    
+                    RoomListPage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.2.3" data-path="../../nodejs/reference/ContainerComponent/RoomSettingPage.html">
+            
+                <a href="../../nodejs/reference/ContainerComponent/RoomSettingPage.html">
+            
+                    
+                    RoomSettingPage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.2.4" data-path="../../nodejs/reference/ContainerComponent/SelectContactPage.html">
+            
+                <a href="../../nodejs/reference/ContainerComponent/SelectContactPage.html">
+            
+                    
+                    SelectContactPage
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.3" data-path="../../nodejs/reference/PresentationComponent/">
+            
+                <a href="../../nodejs/reference/PresentationComponent/">
+            
+                    
+                    プレゼンテーションコンポーネント
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.3.2.3.1" data-path="../../nodejs/reference/PresentationComponent/Avatar.html">
+            
+                <a href="../../nodejs/reference/PresentationComponent/Avatar.html">
+            
+                    
+                    Avatar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.3.2" data-path="../../nodejs/reference/PresentationComponent/Badge.html">
+            
+                <a href="../../nodejs/reference/PresentationComponent/Badge.html">
+            
+                    
+                    Badge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.3.3" data-path="../../nodejs/reference/PresentationComponent/Button.html">
+            
+                <a href="../../nodejs/reference/PresentationComponent/Button.html">
+            
+                    
+                    Button
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.3.4" data-path="../../nodejs/reference/PresentationComponent/ContactList.html">
+            
+                <a href="../../nodejs/reference/PresentationComponent/ContactList.html">
+            
+                    
+                    ContactList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.3.5" data-path="../../nodejs/reference/PresentationComponent/MessageBody.html">
+            
+                <a href="../../nodejs/reference/PresentationComponent/MessageBody.html">
+            
+                    
+                    MessageBody
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.3.6" data-path="../../nodejs/reference/PresentationComponent/Modal.html">
+            
+                <a href="../../nodejs/reference/PresentationComponent/Modal.html">
+            
+                    
+                    Modal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.3.7" data-path="../../nodejs/reference/PresentationComponent/ModalAction.html">
+            
+                <a href="../../nodejs/reference/PresentationComponent/ModalAction.html">
+            
+                    
+                    ModalAction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.3.8" data-path="../../nodejs/reference/PresentationComponent/PhotoEdit.html">
+            
+                <a href="../../nodejs/reference/PresentationComponent/PhotoEdit.html">
+            
+                    
+                    PhotoEdit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.3.9" data-path="../../nodejs/reference/PresentationComponent/RoomList.html">
+            
+                <a href="../../nodejs/reference/PresentationComponent/RoomList.html">
+            
+                    
+                    RoomList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.3.10" data-path="../../nodejs/reference/PresentationComponent/RoomSettingButtons.html">
+            
+                <a href="../../nodejs/reference/PresentationComponent/RoomSettingButtons.html">
+            
+                    
+                    RoomSettingButtons
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.3.11" data-path="../../nodejs/reference/PresentationComponent/SubTitleBar.html">
+            
+                <a href="../../nodejs/reference/PresentationComponent/SubTitleBar.html">
+            
+                    
+                    SubTitleBar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.3.12" data-path="../../nodejs/reference/PresentationComponent/TextAvatar.html">
+            
+                <a href="../../nodejs/reference/PresentationComponent/TextAvatar.html">
+            
+                    
+                    TextAvatar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.3.13" data-path="../../nodejs/reference/PresentationComponent/TopBar.html">
+            
+                <a href="../../nodejs/reference/PresentationComponent/TopBar.html">
+            
+                    
+                    TopBar
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.4" data-path="../../nodejs/reference/AddonMessage/">
+            
+                <a href="../../nodejs/reference/AddonMessage/">
+            
+                    
+                    メッセージアドオン
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.3.2.4.1" data-path="../../nodejs/reference/AddonMessage/Text.html">
+            
+                <a href="../../nodejs/reference/AddonMessage/Text.html">
+            
+                    
+                    Text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.4.2" data-path="../../nodejs/reference/AddonMessage/Image.html">
+            
+                <a href="../../nodejs/reference/AddonMessage/Image.html">
+            
+                    
+                    Image
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.4" data-path="../../contributors/">
+            
+                <a href="../../contributors/">
+            
+                    
+                    コントリビュータ向け
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.4.1" data-path="../../contributors/build-system.html">
+            
+                <a href="../../contributors/build-system.html">
+            
+                    
+                    ビルドシステム
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.4.2" data-path="../../contributors/application-architecture.html">
+            
+                <a href="../../contributors/application-architecture.html">
+            
+                    
+                    アプリケーションアーキテクチャ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >シンプルメッセンジャー</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="uikit">UIKit</h1>
+<h2 id="&#x30B7;&#x30F3;&#x30D7;&#x30EB;&#x30E1;&#x30C3;&#x30BB;&#x30F3;&#x30B8;&#x30E3;&#x30FC;&#x306E;&#x30BF;&#x30B0;&#x8A2D;&#x7F6E;&#x65B9;&#x6CD5;">&#x30B7;&#x30F3;&#x30D7;&#x30EB;&#x30E1;&#x30C3;&#x30BB;&#x30F3;&#x30B8;&#x30E3;&#x30FC;&#x306E;&#x30BF;&#x30B0;&#x8A2D;&#x7F6E;&#x65B9;&#x6CD5;</h2>
+<p>&#x6307;&#x5B9A;&#x3057;&#x305F;&#x30EB;&#x30FC;&#x30E0;&#xFF08;1&#x5BFE;1&#x53CA;&#x3073;&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x30C1;&#x30E3;&#x30C3;&#x30C8;&#xFF09;&#x3067;&#x306E;&#x30C1;&#x30E3;&#x30C3;&#x30C8;&#x304C;&#x3067;&#x304D;&#x308B;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x753B;&#x9762;&#x3068;&#x30EB;&#x30FC;&#x30E0;&#x8A2D;&#x5B9A;&#x3092;&#x884C;&#x3046;&#x3060;&#x3051;&#x306E;&#x30B7;&#x30F3;&#x30D7;&#x30EB;&#x306A;&#x30C1;&#x30E3;&#x30C3;&#x30C8;&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3067;&#x3059;&#x3002;</p>
+<p>&#x4E8B;&#x524D;&#x306B;Chat API&#x3092;&#x8D77;&#x52D5;&#x3057;&#x3066;&#x304A;&#x304F;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;&#x307E;&#x305F;&#x3001;&#x30EA;&#x30A2;&#x30EB;&#x30BF;&#x30A4;&#x30E0;&#x30B3;&#x30DF;&#x30E5;&#x30CB;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x884C;&#x3046;&#x70BA;&#x306B;&#x306F;RTM API&#x3082;&#x8D77;&#x52D5;&#x3057;&#x3066;&#x304A;&#x3044;&#x3066;&#x4E0B;&#x3055;&#x3044;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/css&quot;</span> <span class="hljs-attr">media</span>=<span class="hljs-string">&quot;all&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://fonts.googleapis.com/icon?family=Material+Icons&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/css&quot;</span> <span class="hljs-attr">media</span>=<span class="hljs-string">&quot;all&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://fonts.googleapis.com/css?family=Roboto&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/css&quot;</span> <span class="hljs-attr">media</span>=<span class="hljs-string">&quot;all&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- Template: Messenger Start --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;swagchat&quot;</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://unpkg.com/react-swagchat/dist/react-swagchat.min.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+    Swag.renderTemplateSimpleMessenger({
+      <span class="hljs-comment">// User info</span>
+      userId: <span class="hljs-string">&apos;USER_ID&apos;</span>,
+      userAccessToken: <span class="hljs-string">&apos;ACCESS_TOKEN&apos;</span>,
+
+      <span class="hljs-comment">// Chat API Settings</span>
+      apiEndpoint: <span class="hljs-string">&apos;http://localhost:9000/v0&apos;</span>,
+
+      <span class="hljs-comment">// RTM API Settings</span>
+      rtmProtocol: <span class="hljs-string">&apos;ws&apos;</span>,
+      rtmHost: <span class="hljs-string">&apos;localhost:9100&apos;</span>,
+      rtmPath: <span class="hljs-string">&apos;/v0&apos;</span>,
+    });
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- Template: Messenger End --&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;</th>
+<th>&#x578B;</th>
+<th>&#x3000;&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;</th>
+<th>&#x5FC5;&#x9808;</th>
+<th>&#x8AAC;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>userId</td>
+<td>string</td>
+<td></td>
+<td>&#x2714;</td>
+<td>&#x30E6;&#x30FC;&#x30B6;ID</td>
+</tr>
+<tr>
+<td>userAccessToken</td>
+<td>string</td>
+<td></td>
+<td>&#x2714;</td>
+<td>&#x30E6;&#x30FC;&#x30B6;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x30C8;&#x30FC;&#x30AF;&#x30F3;</td>
+</tr>
+<tr>
+<td>apiEndpoint</td>
+<td>string</td>
+<td></td>
+<td>&#x2714;</td>
+<td>Chat API&#x306E;&#x30A8;&#x30F3;&#x30C9;&#x30DD;&#x30A4;&#x30F3;&#x30C8; <span class="property-example">&#x4F8B;&#x3000;<code>http://localhost:9000/v0</code></span></td>
+</tr>
+<tr>
+<td>apiKey</td>
+<td>string</td>
+<td></td>
+<td></td>
+<td>Chat API&#x306B;&#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;&#x3059;&#x308B;&#x969B;&#x306B;&#x5FC5;&#x8981;&#x306A;API&#x30AD;&#x30FC;&#xFF08;Chat API&#x8D77;&#x52D5;&#x6642;&#x306E;&#x8A2D;&#x5B9A;&#x306B;&#x3088;&#x308A;&#x5FC5;&#x9808;&#x304B;&#x305D;&#x3046;&#x3067;&#x306A;&#x3044;&#x304B;&#x304C;&#x9078;&#x629E;&#x3067;&#x304D;&#x308B;&#xFF09;</td>
+</tr>
+<tr>
+<td>rtmProtocol</td>
+<td>string</td>
+<td></td>
+<td></td>
+<td>RTM API&#x306E;&#x30D7;&#x30ED;&#x30C8;&#x30B3;&#x30EB;<br><code>ws</code><br><code>wss</code></td>
+</tr>
+<tr>
+<td>rtmHost</td>
+<td>string</td>
+<td></td>
+<td></td>
+<td>RTM API&#x306E;&#x30DB;&#x30B9;&#x30C8;&#x540D;&#xFF08;&#x30DD;&#x30FC;&#x30C8;&#x756A;&#x53F7;&#x542B;&#x3080;&#xFF09;<span class="property-example">&#x4F8B;&#x3000;<code>localhost:9100</code></span></td>
+</tr>
+<tr>
+<td>rtmPath</td>
+<td>string</td>
+<td></td>
+<td></td>
+<td>RTM API&#x306E;&#x30A8;&#x30F3;&#x30C9;&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x30D1;&#x30B9; <span class="property-example">&#x4F8B;&#x3000;<code>/v0</code></span></td>
+</tr>
+<tr>
+<td>renderDomId</td>
+<td>string</td>
+<td><code>swagchat</code></td>
+<td></td>
+<td>&#x30EC;&#x30F3;&#x30C0;&#x30EA;&#x30F3;&#x30B0;&#x3059;&#x308B;DOM&#x306E;ID</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="messenger.html" class="navigation navigation-prev " aria-label="Previous page: メッセンジャー">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../../nodejs/" class="navigation navigation-next " aria-label="Next page: チャットアプリケーションを組み込む">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"シンプルメッセンジャー","level":"5.1.2.2","depth":3,"next":{"title":"チャットアプリケーションを組み込む","level":"5.1.3","depth":2,"path":"uikit/nodejs/README.md","ref":"uikit/nodejs/README.md","articles":[{"title":"インストール","level":"5.1.3.1","depth":3,"path":"uikit/nodejs/install.md","ref":"uikit/nodejs/install.md","articles":[]},{"title":"リファレンス","level":"5.1.3.2","depth":3,"path":"uikit/nodejs/reference/README.md","ref":"uikit/nodejs/reference/README.md","articles":[{"title":"アプリケーションコンポーネント","level":"5.1.3.2.1","depth":4,"path":"uikit/nodejs/reference/ApplicationComponent/README.md","ref":"uikit/nodejs/reference/ApplicationComponent/README.md","articles":[{"title":"Messenger","level":"5.1.3.2.1.1","depth":5,"path":"uikit/nodejs/reference/ApplicationComponent/Messenger.md","ref":"uikit/nodejs/reference/ApplicationComponent/Messenger.md","articles":[]},{"title":"SimpleMessenger","level":"5.1.3.2.1.2","depth":5,"path":"uikit/nodejs/reference/ApplicationComponent/SimpleMessenger.md","ref":"uikit/nodejs/reference/ApplicationComponent/SimpleMessenger.md","articles":[]}]},{"title":"コンテナーコンポーネント","level":"5.1.3.2.2","depth":4,"path":"uikit/nodejs/reference/ContainerComponent/README.md","ref":"uikit/nodejs/reference/ContainerComponent/README.md","articles":[{"title":"MessagePage","level":"5.1.3.2.2.1","depth":5,"path":"uikit/nodejs/reference/ContainerComponent/MessagePage.md","ref":"uikit/nodejs/reference/ContainerComponent/MessagePage.md","articles":[]},{"title":"RoomListPage","level":"5.1.3.2.2.2","depth":5,"path":"uikit/nodejs/reference/ContainerComponent/RoomListPage.md","ref":"uikit/nodejs/reference/ContainerComponent/RoomListPage.md","articles":[]},{"title":"RoomSettingPage","level":"5.1.3.2.2.3","depth":5,"path":"uikit/nodejs/reference/ContainerComponent/RoomSettingPage.md","ref":"uikit/nodejs/reference/ContainerComponent/RoomSettingPage.md","articles":[]},{"title":"SelectContactPage","level":"5.1.3.2.2.4","depth":5,"path":"uikit/nodejs/reference/ContainerComponent/SelectContactPage.md","ref":"uikit/nodejs/reference/ContainerComponent/SelectContactPage.md","articles":[]}]},{"title":"プレゼンテーションコンポーネント","level":"5.1.3.2.3","depth":4,"path":"uikit/nodejs/reference/PresentationComponent/README.md","ref":"uikit/nodejs/reference/PresentationComponent/README.md","articles":[{"title":"Avatar","level":"5.1.3.2.3.1","depth":5,"path":"uikit/nodejs/reference/PresentationComponent/Avatar.md","ref":"uikit/nodejs/reference/PresentationComponent/Avatar.md","articles":[]},{"title":"Badge","level":"5.1.3.2.3.2","depth":5,"path":"uikit/nodejs/reference/PresentationComponent/Badge.md","ref":"uikit/nodejs/reference/PresentationComponent/Badge.md","articles":[]},{"title":"Button","level":"5.1.3.2.3.3","depth":5,"path":"uikit/nodejs/reference/PresentationComponent/Button.md","ref":"uikit/nodejs/reference/PresentationComponent/Button.md","articles":[]},{"title":"ContactList","level":"5.1.3.2.3.4","depth":5,"path":"uikit/nodejs/reference/PresentationComponent/ContactList.md","ref":"uikit/nodejs/reference/PresentationComponent/ContactList.md","articles":[]},{"title":"MessageBody","level":"5.1.3.2.3.5","depth":5,"path":"uikit/nodejs/reference/PresentationComponent/MessageBody.md","ref":"uikit/nodejs/reference/PresentationComponent/MessageBody.md","articles":[]},{"title":"Modal","level":"5.1.3.2.3.6","depth":5,"path":"uikit/nodejs/reference/PresentationComponent/Modal.md","ref":"uikit/nodejs/reference/PresentationComponent/Modal.md","articles":[]},{"title":"ModalAction","level":"5.1.3.2.3.7","depth":5,"path":"uikit/nodejs/reference/PresentationComponent/ModalAction.md","ref":"uikit/nodejs/reference/PresentationComponent/ModalAction.md","articles":[]},{"title":"PhotoEdit","level":"5.1.3.2.3.8","depth":5,"path":"uikit/nodejs/reference/PresentationComponent/PhotoEdit.md","ref":"uikit/nodejs/reference/PresentationComponent/PhotoEdit.md","articles":[]},{"title":"RoomList","level":"5.1.3.2.3.9","depth":5,"path":"uikit/nodejs/reference/PresentationComponent/RoomList.md","ref":"uikit/nodejs/reference/PresentationComponent/RoomList.md","articles":[]},{"title":"RoomSettingButtons","level":"5.1.3.2.3.10","depth":5,"path":"uikit/nodejs/reference/PresentationComponent/RoomSettingButtons.md","ref":"uikit/nodejs/reference/PresentationComponent/RoomSettingButtons.md","articles":[]},{"title":"SubTitleBar","level":"5.1.3.2.3.11","depth":5,"path":"uikit/nodejs/reference/PresentationComponent/SubTitleBar.md","ref":"uikit/nodejs/reference/PresentationComponent/SubTitleBar.md","articles":[]},{"title":"TextAvatar","level":"5.1.3.2.3.12","depth":5,"path":"uikit/nodejs/reference/PresentationComponent/TextAvatar.md","ref":"uikit/nodejs/reference/PresentationComponent/TextAvatar.md","articles":[]},{"title":"TopBar","level":"5.1.3.2.3.13","depth":5,"path":"uikit/nodejs/reference/PresentationComponent/TopBar.md","ref":"uikit/nodejs/reference/PresentationComponent/TopBar.md","articles":[]}]},{"title":"メッセージアドオン","level":"5.1.3.2.4","depth":4,"path":"uikit/nodejs/reference/AddonMessage/README.md","ref":"uikit/nodejs/reference/AddonMessage/README.md","articles":[{"title":"Text","level":"5.1.3.2.4.1","depth":5,"path":"uikit/nodejs/reference/AddonMessage/Text.md","ref":"uikit/nodejs/reference/AddonMessage/Text.md","articles":[]},{"title":"Image","level":"5.1.3.2.4.2","depth":5,"path":"uikit/nodejs/reference/AddonMessage/Image.md","ref":"uikit/nodejs/reference/AddonMessage/Image.md","articles":[]}]}]}]},"previous":{"title":"メッセンジャー","level":"5.1.2.1","depth":3,"path":"uikit/browser/chat-apps/messenger.md","ref":"uikit/browser/chat-apps/messenger.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"swagchat SDK","language":"jp","gitbook":"*"},"file":{"path":"uikit/browser/chat-apps/simple-messenger.md","mtime":"2017-09-17T05:46:13.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-09-20T16:58:48.911Z"},"basePath":"../../..","book":{"language":"jp"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../../gitbook/gitbook.js"></script>
+    <script src="../../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

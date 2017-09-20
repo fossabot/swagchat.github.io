@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Button</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" type="text/css" media="all">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" type="text/css" media="all">
+    <link rel="stylesheet" href="../react-swagchat.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="../uikit.css" media="all">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="swagchat" class="all-components" />
+    <script src="../react-swagchat.min.js"></script>
+    <script type="text/babel">
+      class ModalSample extends React.Component {
+        onModalTopClick = () => {
+          this._modalTop ? this._modalTop.onModalClick() : null;
+        }
+
+        onModalTopOkClick = () => {
+          alert("Modal Button Top Click!");
+          this._modalTop.onModalClick();
+        }
+
+        onModalBottomClick = () => {
+          this._modalBottom ? this._modalBottom.onModalClick() : null;
+        }
+
+        onModalBottomOkClick = () => {
+          alert("Modal Button Bottom Click!");
+          this._modalBottom.onModalClick();
+        }
+
+        render() {
+          return (
+            <div>
+              <Sc.Button
+                type="round"
+                text="Modal Button Top"
+                icon={<i className="material-icons">open_in_new</i>}
+                onClick={() => this.onModalTopClick()}
+              />
+              <Sc.Modal
+                ref={(child) => this._modalTop = child}
+                type="buttonTop"
+                title="Button Top"
+                component={
+                  <div>
+                    <h1>heading1</h1>
+                    <h2>heading2</h2>
+                    <h3>heading3</h3>
+                    <h4>heading4</h4>
+                    <h5>heading5</h5>
+                    <h6>heading6</h6>
+                  </div>
+                }
+                onOkModalClick={() => this.onModalTopOkClick()}
+              />
+
+              <Sc.Button
+                type="round"
+                text="Modal bottonBottom"
+                icon={<i className="material-icons">open_in_new</i>}
+                onClick={() => this.onModalBottomClick()}
+              />
+              <Sc.Modal
+                ref={(child) => this._modalBottom = child}
+                type="buttonBottom"
+                component={
+                  <div>
+                    <h1>heading1</h1>
+                    <h2>heading2</h2>
+                    <h3>heading3</h3>
+                    <h4>heading4</h4>
+                    <h5>heading5</h5>
+                    <h6>heading6</h6>
+                  </div>
+                }
+                onOkModalClick={() => this.onModalBottomOkClick()}
+              />
+            </div>
+          );
+        }
+      }
+
+      class ModalActionSample extends React.Component {
+        onModalClick = () => {
+          this._modalAction ? this._modalAction.onModalClick() : null;
+        }
+
+        onModalAction1Click = () => {
+          alert("ACTION 1");
+          this._modalAction.onModalClick();
+        }
+
+        onModalAction2Click = () => {
+          alert("ACTION 2");
+          this._modalAction.onModalClick();
+        }
+
+        onModalAction3Click = () => {
+          alert("ACTION 3");
+          this._modalAction.onModalClick();
+        }
+
+        render() {
+          const modalActions = [
+            {name: 'ACTION 1', onItemTap: this.onModalAction1Click.bind(this)},
+            {name: 'ACTION 2', onItemTap: this.onModalAction2Click.bind(this)},
+            {name: 'ACTION 3', onItemTap: this.onModalAction3Click.bind(this)},
+          ];
+
+          return (
+            <div>
+              <Sc.Button
+                type="round"
+                text="Modal Action"
+                icon={<i className="material-icons">open_in_new</i>}
+                onClick={() => this.onModalClick()}
+              />
+              <Sc.ModalAction
+                ref={(child) => this._modalAction = child}
+                component={
+                  <div>
+                    <h1>heading1</h1>
+                    <h2>heading2</h2>
+                    <h3>heading3</h3>
+                    <h4>heading4</h4>
+                    <h5>heading5</h5>
+                    <h6>heading6</h6>
+                  </div>
+                }
+                actions={modalActions}
+              />
+            </div>
+          );
+        }
+      }
+
+      ReactDOM.render(
+        <div>
+          <div className="horizontal">
+            <Sc.Avatar
+              src="http://www.material-ui.com/images/adhamdannaway-128.jpg"
+              shape="circle"
+            />
+            <Sc.Avatar
+              src="http://www.material-ui.com/images/adhamdannaway-128.jpg"
+              shape="square"
+            />
+            <Sc.Avatar
+              src="http://www.material-ui.com/images/adhamdannaway-128.jpg"
+              shape="squareRound"
+            />
+            <Sc.Avatar
+              src="http://www.material-ui.com/images/adhamdannaway-128.jpg"
+              shape="round"
+            />
+          </div>
+          <div className="horizontal">
+            <Sc.Badge
+              count={100}
+              type="circle"
+            />
+            <Sc.Badge
+              count={100}
+              type="square"
+            />
+            <Sc.Badge
+              type="square-round"
+              count={100}
+            />
+            <Sc.Badge
+              type="round"
+              count={100}
+            />
+            <Sc.Badge
+              count={100}
+              color="secondary"
+            />
+            <Sc.Badge
+              count={100}
+              color="success"
+            />
+            <Sc.Badge
+              count={100}
+              color="danger"
+            />
+            <Sc.Badge
+              count={100}
+              color="warning"
+            />
+            <Sc.Badge
+              count={100}
+              color="info"
+            />
+            <Sc.Badge
+              count={100}
+              color="light"
+            />
+            <Sc.Badge
+              count={100}
+              color="dark"
+            />
+          </div>
+          <div className="horizontal">
+            <Sc.Button
+              shape="circle"
+              text="circle"
+              icon={<i className="material-icons">chat</i>}
+              onClick={() => alert("circle")}
+            />
+            <Sc.Button
+              shape="square"
+              text="square"
+              icon={<i className="material-icons">chat</i>}
+              onClick={() => alert("square")}
+            />
+            <Sc.Button
+              shape="squareRound"
+              text="squareRound"
+              icon={<i className="material-icons">chat</i>}
+              hoverBorderColor="#2E7D32"
+              hoverBackgroundColor="#2E7D32"
+              onClick={() => alert("squareRound")}
+            />
+            <Sc.Button
+              shape="round"
+              text="round"
+              icon={<i className="material-icons">chat</i>}
+              fontColor="#EC407A"
+              hoverFontColor="#ffffff"
+              borderColor="#EC407A"
+              hoverBorderColor="#D81B60"
+              backgroundColor="#ffffff"
+              hoverBackgroundColor="#EC407A"
+              onClick={() => alert("round")}
+            />
+          </div>
+          <div className="horizontal">
+            <Sc.Button
+              color="primary"
+              text="primary"
+              icon={<i className="material-icons">chat</i>}
+              className="component"
+              onClick={() => alert("primary")}
+            />
+            <Sc.Button
+              color="secondary"
+              text="secondary"
+              icon={<i className="material-icons">chat</i>}
+              className="component"
+              onClick={() => alert("secondary")}
+            />
+            <Sc.Button
+              color="success"
+              text="success"
+              icon={<i className="material-icons">chat</i>}
+              className="component"
+              onClick={() => alert("success")}
+            />
+            <Sc.Button
+              color="danger"
+              text="danger"
+              icon={<i className="material-icons">chat</i>}
+              className="component"
+              onClick={() => alert("danger")}
+            />
+            <Sc.Button
+              color="warning"
+              text="warning"
+              icon={<i className="material-icons">chat</i>}
+              className="component"
+              onClick={() => alert("warning")}
+            />
+            <Sc.Button
+              color="info"
+              text="info"
+              icon={<i className="material-icons">chat</i>}
+              className="component"
+              onClick={() => alert("info")}
+            />
+            <Sc.Button
+              color="disable"
+              text="disable"
+              icon={<i className="material-icons">chat</i>}
+              className="component"
+              onClick={() => alert("disable")}
+            />
+            <Sc.Button
+              color="dark"
+              text="dark"
+              icon={<i className="material-icons">chat</i>}
+              className="component"
+              onClick={() => alert("dark")}
+            />
+            <Sc.Button
+              color="light"
+              text="light"
+              icon={<i className="material-icons">chat</i>}
+              className="component"
+              onClick={() => alert("light")}
+            />
+          </div>
+          <div className="horizontal">
+            <Sc.Button
+              color="linkPrimary"
+              text="linkPrimary"
+              icon={<i className="material-icons">chat</i>}
+              className="component"
+              onClick={() => alert("linkPrimary")}
+            />
+            <Sc.Button
+              color="linkBlack"
+              text="linkBlack"
+              icon={<i className="material-icons">chat</i>}
+              className="component"
+              onClick={() => alert("linkBlack")}
+            />
+            <Sc.Button
+              color="linkWhite"
+              text="linkWhite"
+              icon={<i className="material-icons">chat</i>}
+              className="component"
+              onClick={() => alert("linkWhite")}
+            />
+          </div>
+          <div className="horizontal">
+            <ModalSample />
+            <ModalActionSample />
+          </div>
+          <div className="horizontal">
+            <Sc.PhotoEdit
+              shape="circle"
+              src="https://dummyimage.com/300x300/3768c4/fff&text=circle"
+              onUpdatePhoto={() => alert('Photo updated!')}
+            />
+            <Sc.PhotoEdit
+              shape="square"
+              src="https://dummyimage.com/300x300/3768c4/fff&text=square"
+              onUpdatePhoto={() => alert('Photo updated!')}
+            />
+            <Sc.PhotoEdit
+              shape="squareRound"
+              src="https://dummyimage.com/300x300/3768c4/fff&text=square-round"
+              onUpdatePhoto={() => alert('Photo updated!')}
+            />
+            <Sc.PhotoEdit
+              shape="round"
+              src="https://dummyimage.com/300x300/3768c4/fff&text=round"
+              onUpdatePhoto={() => alert('Photo updated!')}
+            />
+          </div>
+          <div className="horizontal">
+            <Sc.RoomEditForm
+              roomName="Lee"
+              roomPictureUrl="https://dummyimage.com/300x300/3768c4/fff&text=circle"
+            />
+          </div>
+          <div className="horizontal">
+            <Sc.RoomSettingButtons
+              title="Room Setting"
+              userId="00581ea9-3547-4c81-930c-a3ed042e4b21"
+              userBlocks={["500efdd3-2898-493e-bc14-d34750cc19d5", "7da9e9c6-d174-4ab5-86f8-99e727c710ff"]}
+              room={{
+                roomId: "83816cbe-4d49-4634-9c0c-85e38ffc15c3",
+                userId: "00581ea9-3547-4c81-930c-a3ed042e4b21",
+                name: "test234",
+                pictureUrl: "http://localhost:9000/v0/assets/74669ec4-5ce7-45f3-85ea-2773d187b5f0.png",
+                metaData: {},
+                type: 2,
+                lastMessage: "test",
+                lastMessageUpdated: "2017-08-31T09:13:14Z",
+                messageCount: 2,
+                isCanLeft: true,
+                isShowUsers: true,
+                created: "2017-08-31T09:05:15Z",
+                modified: "2017-08-31T09:50:42Z",
+                users:[
+                  {userId:"00581ea9-3547-4c81-930c-a3ed042e4b21",name:"Williams",pictureUrl:"http://www.material-ui.com/images/ok-128.jpg",metaData:{},isCanBlock:true,isShowUsers:true,created:"2017-06-29T15:22:57Z",modified:"2017-06-29T15:22:57Z",ruUnreadCount:0,ruMetaData:{},ruCreated:"2017-08-31T09:05:15Z",ruModified:"2017-08-31T09:05:15Z"},
+                  {userId:"1e53e44f-4dd3-4da6-a236-aac43dbafb83",name:"Lewis",pictureUrl:"http://www.material-ui.com/images/adhamdannaway-128.jpg",metaData:{},isCanBlock:true,isShowUsers:true,created:"2017-06-29T17:16:44Z",modified:"2017-06-29T17:16:44Z",ruUnreadCount:2,ruMetaData:{},ruCreated:"2017-08-31T09:05:15Z",ruModified:"2017-08-31T09:05:15Z"},
+                  {userId:"f7463789-a127-430b-9cbb-4f1f45c073cc",name:"Perez",pictureUrl:"http://www.material-ui.com/images/adellecharles-128.jpg",metaData:{},isCanBlock:true,isShowUsers:true,created:"2017-06-29T17:18:35Z",modified:"2017-06-29T17:18:35Z",ruUnreadCount:2,ruMetaData:{},ruCreated:"2017-08-31T09:05:15Z",ruModified:"2017-08-31T09:05:15Z"}
+                ]
+              }}
+              onItemTap={() => alert("hello")}
+            />
+          </div>
+          <div className="horizontal">
+            <Sc.TextAvatar
+              shape="circle"
+              text="CI"
+            />
+            <Sc.TextAvatar
+              shape="square"
+              text="SQ"
+            />
+            <Sc.TextAvatar
+              shape="squareRound"
+              text="SR"
+            />
+            <Sc.TextAvatar
+              shape="round"
+              text="RO"
+            />
+          </div>
+        </div>,
+        document.getElementById('swagchat')
+      );
+    </script>
+  </body>
+</html>

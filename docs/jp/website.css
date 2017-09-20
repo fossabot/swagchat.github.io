@@ -1,0 +1,71 @@
+/*
+.markdown-section h3 {
+  font-size: 40px!important;
+}
+*/
+.markdown-section h2 {
+  font-size: 1.5em;
+}
+.markdown-section h3 {
+  font-size: 1.3em;
+}
+.markdown-section h4 {
+  margin-top: 2.5em;
+  font-size: 1.2em;
+  border-bottom: 1px solid #ccc;
+  font-weight: normal;
+}
+.markdown-section em {
+  font-style: normal;
+  font-size: 0.9em;
+  border: 1px solid #29B6F6;
+  display: block;
+  padding: 10px;
+  margin: 10px 0 0 10px;
+  border-radius: 5px;
+  background: white;
+}
+.markdown-section ul {
+  margin-bottom: 2em;
+}
+.markdown-section table tr td:first-child {
+  color: #EC407A;
+}
+.markdown-section table tr:nth-child(2n) {
+
+  background-color: transparent;
+}
+.markdown-section table tr td:nth-child(3n),
+.markdown-section table tr td:nth-child(4n) {
+  text-align: center;
+}
+.markdown-section table thead tr {
+  background-color: #eee;
+}
+.markdown-section table thead th {
+  font-weight: normal;
+}
+
+.book-summary ul.summary li a, .book-summary ul.summary li span {
+  padding: 5px 10px;
+}
+iframe.code {
+  border: 1px solid #eee;
+  width: 100%;
+}
+.property-example {
+  display: block;
+  font-style: italic;
+  margin-top: 1em;
+  font-size: 0.9em;
+}
+
+table::-webkit-scrollbar{　　/*tableにスクロールバーを追加*/
+ height: 5px;
+}
+table::-webkit-scrollbar-track{　　/*tableにスクロールバーを追加*/
+ background: #F1F1F1;
+}
+table::-webkit-scrollbar-thumb {　　/*tableにスクロールバーを追加*/
+ background: #BCBCBC;
+}

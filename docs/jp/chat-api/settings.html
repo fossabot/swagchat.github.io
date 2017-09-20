@@ -1,0 +1,1556 @@
+
+<!DOCTYPE HTML>
+<html lang="jp" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>設定 · swagchat SDK</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="settings.html" />
+    
+    
+    <link rel="prev" href="reference.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    はじめに
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../start-guide.html">
+            
+                <a href="../start-guide.html">
+            
+                    
+                    スタートガイド
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../quick-start/">
+            
+                <a href="../quick-start/">
+            
+                    
+                    クイックスタート
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../quick-start/local.html">
+            
+                <a href="../quick-start/local.html">
+            
+                    
+                    ローカル環境で起動
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../quick-start/paas.html">
+            
+                <a href="../quick-start/paas.html">
+            
+                    
+                    PaaSで起動
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../production-deploy.html">
+            
+                <a href="../production-deploy.html">
+            
+                    
+                    プロダクションデプロイ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    Chat API
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    概要
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="launch.html">
+            
+                <a href="launch.html">
+            
+                    
+                    起動方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="reference.html">
+            
+                <a href="reference.html">
+            
+                    
+                    リファレンス
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.4" data-path="settings.html">
+            
+                <a href="settings.html">
+            
+                    
+                    設定
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.4.1" data-path="settings.html">
+            
+                <a href="settings.html#port">
+            
+                    
+                    port
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.2" data-path="settings.html">
+            
+                <a href="settings.html#profiling">
+            
+                    
+                    profiling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.3" data-path="settings.html">
+            
+                <a href="settings.html#errorlogging">
+            
+                    
+                    errorLogging
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.4" data-path="settings.html">
+            
+                <a href="settings.html#logginglevel">
+            
+                    
+                    logging.level
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5" >
+            
+                <span>
+            
+                    
+                    storage
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.4.5.1" data-path="settings.html">
+            
+                <a href="settings.html#storageprovider">
+            
+                    
+                    provider
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5.2" data-path="settings.html">
+            
+                <a href="settings.html#storagebaseUrl">
+            
+                    
+                    baseUrl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5.3" data-path="settings.html">
+            
+                <a href="settings.html#storagelocalpath">
+            
+                    
+                    localPath
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5.4" data-path="settings.html">
+            
+                <a href="settings.html#storageuploadbucket">
+            
+                    
+                    uploadBucket
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5.5" data-path="settings.html">
+            
+                <a href="settings.html#storageuploaddirectory">
+            
+                    
+                    uploadDirectory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5.6" data-path="settings.html">
+            
+                <a href="settings.html#storagethumbnailbucket">
+            
+                    
+                    thumbnailBucket
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5.7" data-path="settings.html">
+            
+                <a href="settings.html#storagethumbnaildirectory">
+            
+                    
+                    thumbnailDirectory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5.8" data-path="settings.html">
+            
+                <a href="settings.html#storagegcpprojectid">
+            
+                    
+                    gcpProjectId
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5.9" data-path="settings.html">
+            
+                <a href="settings.html#storagegcpjwtpath">
+            
+                    
+                    gcpJwtPath
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5.10" data-path="settings.html">
+            
+                <a href="settings.html#storageawsregion">
+            
+                    
+                    awsRegion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5.11" data-path="settings.html">
+            
+                <a href="settings.html#storageawsaccesskeyid">
+            
+                    
+                    awsAccessKeyId
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5.12" data-path="settings.html">
+            
+                <a href="settings.html#storageawssecretaccesskey">
+            
+                    
+                    awsSecretAccessKey
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <span>
+            
+                    
+                    RTM API
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../rtm-api/">
+            
+                <a href="../rtm-api/">
+            
+                    
+                    概要
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../rtm-api/launch.html">
+            
+                <a href="../rtm-api/launch.html">
+            
+                    
+                    起動方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" >
+            
+                <span>
+            
+                    
+                    SDK
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../sdk/">
+            
+                <a href="../sdk/">
+            
+                    
+                    概要
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../sdk/install.html">
+            
+                <a href="../sdk/install.html">
+            
+                    
+                    インストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" >
+            
+                <span>
+            
+                    
+                    UIKit
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../uikit/">
+            
+                <a href="../uikit/">
+            
+                    
+                    概要
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../uikit/browser/">
+            
+                <a href="../uikit/browser/">
+            
+                    
+                    タグを設置して動かす
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.2.1" data-path="../uikit/browser/chat-apps/messenger.html">
+            
+                <a href="../uikit/browser/chat-apps/messenger.html">
+            
+                    
+                    メッセンジャー
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2.2" data-path="../uikit/browser/chat-apps/simple-messenger.html">
+            
+                <a href="../uikit/browser/chat-apps/simple-messenger.html">
+            
+                    
+                    シンプルメッセンジャー
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" data-path="../uikit/nodejs/">
+            
+                <a href="../uikit/nodejs/">
+            
+                    
+                    チャットアプリケーションを組み込む
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.3.1" data-path="../uikit/nodejs/install.html">
+            
+                <a href="../uikit/nodejs/install.html">
+            
+                    
+                    インストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2" data-path="../uikit/nodejs/reference/">
+            
+                <a href="../uikit/nodejs/reference/">
+            
+                    
+                    リファレンス
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.3.2.1" data-path="../uikit/nodejs/reference/ApplicationComponent/">
+            
+                <a href="../uikit/nodejs/reference/ApplicationComponent/">
+            
+                    
+                    アプリケーションコンポーネント
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.3.2.1.1" data-path="../uikit/nodejs/reference/ApplicationComponent/Messenger.html">
+            
+                <a href="../uikit/nodejs/reference/ApplicationComponent/Messenger.html">
+            
+                    
+                    Messenger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.1.2" data-path="../uikit/nodejs/reference/ApplicationComponent/SimpleMessenger.html">
+            
+                <a href="../uikit/nodejs/reference/ApplicationComponent/SimpleMessenger.html">
+            
+                    
+                    SimpleMessenger
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.2" data-path="../uikit/nodejs/reference/ContainerComponent/">
+            
+                <a href="../uikit/nodejs/reference/ContainerComponent/">
+            
+                    
+                    コンテナーコンポーネント
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.3.2.2.1" data-path="../uikit/nodejs/reference/ContainerComponent/MessagePage.html">
+            
+                <a href="../uikit/nodejs/reference/ContainerComponent/MessagePage.html">
+            
+                    
+                    MessagePage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.2.2" data-path="../uikit/nodejs/reference/ContainerComponent/RoomListPage.html">
+            
+                <a href="../uikit/nodejs/reference/ContainerComponent/RoomListPage.html">
+            
+                    
+                    RoomListPage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.2.3" data-path="../uikit/nodejs/reference/ContainerComponent/RoomSettingPage.html">
+            
+                <a href="../uikit/nodejs/reference/ContainerComponent/RoomSettingPage.html">
+            
+                    
+                    RoomSettingPage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.2.4" data-path="../uikit/nodejs/reference/ContainerComponent/SelectContactPage.html">
+            
+                <a href="../uikit/nodejs/reference/ContainerComponent/SelectContactPage.html">
+            
+                    
+                    SelectContactPage
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.3" data-path="../uikit/nodejs/reference/PresentationComponent/">
+            
+                <a href="../uikit/nodejs/reference/PresentationComponent/">
+            
+                    
+                    プレゼンテーションコンポーネント
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.3.2.3.1" data-path="../uikit/nodejs/reference/PresentationComponent/Avatar.html">
+            
+                <a href="../uikit/nodejs/reference/PresentationComponent/Avatar.html">
+            
+                    
+                    Avatar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.3.2" data-path="../uikit/nodejs/reference/PresentationComponent/Badge.html">
+            
+                <a href="../uikit/nodejs/reference/PresentationComponent/Badge.html">
+            
+                    
+                    Badge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.3.3" data-path="../uikit/nodejs/reference/PresentationComponent/Button.html">
+            
+                <a href="../uikit/nodejs/reference/PresentationComponent/Button.html">
+            
+                    
+                    Button
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.3.4" data-path="../uikit/nodejs/reference/PresentationComponent/ContactList.html">
+            
+                <a href="../uikit/nodejs/reference/PresentationComponent/ContactList.html">
+            
+                    
+                    ContactList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.3.5" data-path="../uikit/nodejs/reference/PresentationComponent/MessageBody.html">
+            
+                <a href="../uikit/nodejs/reference/PresentationComponent/MessageBody.html">
+            
+                    
+                    MessageBody
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.3.6" data-path="../uikit/nodejs/reference/PresentationComponent/Modal.html">
+            
+                <a href="../uikit/nodejs/reference/PresentationComponent/Modal.html">
+            
+                    
+                    Modal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.3.7" data-path="../uikit/nodejs/reference/PresentationComponent/ModalAction.html">
+            
+                <a href="../uikit/nodejs/reference/PresentationComponent/ModalAction.html">
+            
+                    
+                    ModalAction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.3.8" data-path="../uikit/nodejs/reference/PresentationComponent/PhotoEdit.html">
+            
+                <a href="../uikit/nodejs/reference/PresentationComponent/PhotoEdit.html">
+            
+                    
+                    PhotoEdit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.3.9" data-path="../uikit/nodejs/reference/PresentationComponent/RoomList.html">
+            
+                <a href="../uikit/nodejs/reference/PresentationComponent/RoomList.html">
+            
+                    
+                    RoomList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.3.10" data-path="../uikit/nodejs/reference/PresentationComponent/RoomSettingButtons.html">
+            
+                <a href="../uikit/nodejs/reference/PresentationComponent/RoomSettingButtons.html">
+            
+                    
+                    RoomSettingButtons
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.3.11" data-path="../uikit/nodejs/reference/PresentationComponent/SubTitleBar.html">
+            
+                <a href="../uikit/nodejs/reference/PresentationComponent/SubTitleBar.html">
+            
+                    
+                    SubTitleBar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.3.12" data-path="../uikit/nodejs/reference/PresentationComponent/TextAvatar.html">
+            
+                <a href="../uikit/nodejs/reference/PresentationComponent/TextAvatar.html">
+            
+                    
+                    TextAvatar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.3.13" data-path="../uikit/nodejs/reference/PresentationComponent/TopBar.html">
+            
+                <a href="../uikit/nodejs/reference/PresentationComponent/TopBar.html">
+            
+                    
+                    TopBar
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.4" data-path="../uikit/nodejs/reference/AddonMessage/">
+            
+                <a href="../uikit/nodejs/reference/AddonMessage/">
+            
+                    
+                    メッセージアドオン
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.3.2.4.1" data-path="../uikit/nodejs/reference/AddonMessage/Text.html">
+            
+                <a href="../uikit/nodejs/reference/AddonMessage/Text.html">
+            
+                    
+                    Text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.4.2" data-path="../uikit/nodejs/reference/AddonMessage/Image.html">
+            
+                <a href="../uikit/nodejs/reference/AddonMessage/Image.html">
+            
+                    
+                    Image
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.4" data-path="../uikit/contributors/">
+            
+                <a href="../uikit/contributors/">
+            
+                    
+                    コントリビュータ向け
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.4.1" data-path="../uikit/contributors/build-system.html">
+            
+                <a href="../uikit/contributors/build-system.html">
+            
+                    
+                    ビルドシステム
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.4.2" data-path="../uikit/contributors/application-architecture.html">
+            
+                <a href="../uikit/contributors/application-architecture.html">
+            
+                    
+                    アプリケーションアーキテクチャ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >設定</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chat-api">Chat API</h1>
+<h2 id="&#x8A2D;&#x5B9A;">&#x8A2D;&#x5B9A;</h2>
+<p>Chat API&#x306F;&#x8A2D;&#x5B9A;&#x306B;&#x3088;&#x308A;&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x306E;&#x6319;&#x52D5;&#x3092;&#x5909;&#x66F4;&#x3059;&#x308B;&#x4E8B;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;
+&#x8A2D;&#x5B9A;&#x65B9;&#x6CD5;&#x306F;3&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x3042;&#x308A;&#x307E;&#x3059;</p>
+<ol>
+<li>yaml&#x306B;&#x3088;&#x308B;&#x8A2D;&#x5B9A;&#x30D5;&#x30A1;&#x30A4;&#x30EB;</li>
+<li>&#x74B0;&#x5883;&#x5909;&#x6570;</li>
+<li>&#x5B9F;&#x884C;&#x6642;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;</li>
+</ol>
+<p>&#x8A2D;&#x5B9A;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x5229;&#x7528;&#x3059;&#x308B;&#x5834;&#x5408;&#x306F;&#x5B9F;&#x884C;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x304C;&#x3042;&#x308B;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x306B;<code>config/swagchat.yaml</code>&#x3068;&#x3044;&#x3046;&#x30D1;&#x30B9;&#x3067;&#x4F5C;&#x6210;&#x3057;&#x3066;&#x4E0B;&#x3055;&#x3044;&#x3002;
+&#x30B5;&#x30F3;&#x30D7;&#x30EB;&#x306F;<a href="https://github.com/fairway-corp/swagchat-chat-api/blob/master/config/example.swagchat.yaml" target="_blank">example.swagchat.yaml</a>&#x3092;&#x3054;&#x53C2;&#x7167;&#x4E0B;&#x3055;&#x3044;&#x3002;
+&#x307E;&#x305F;&#x74B0;&#x5883;&#x5909;&#x6570;&#x306F;&#x4ED6;&#x306E;&#x30D7;&#x30ED;&#x30C0;&#x30AF;&#x30C8;&#x3068;&#x885D;&#x7A81;&#x3057;&#x306A;&#x3044;&#x3088;&#x3046;&#x306B;<code>SC_</code>&#x3068;&#x3044;&#x3046;&#x30D7;&#x30EC;&#x30D5;&#x30A3;&#x30C3;&#x30AF;&#x30B9;&#x3092;&#x4ED8;&#x4E0E;&#x3059;&#x308B;&#x5F62;&#x5F0F;&#x3092;&#x3068;&#x3063;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<p>&#x8A2D;&#x5B9A;&#x3067;&#x304D;&#x308B;&#x5185;&#x5BB9;&#x306F;&#x4EE5;&#x4E0B;&#x306E;&#x901A;&#x308A;&#x3067;&#x3059;&#x3002;</p>
+<h3 id="port">port</h3>
+<p>TCP&#x30EA;&#x30C3;&#x30B9;&#x30F3;&#x30DD;&#x30FC;&#x30C8;&#x3092;&#x8A2D;&#x5B9A;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#x306F; 9000 &#x3067;&#x3059;&#x3002;</p>
+<pre><code class="lang-yaml"><span class="hljs-comment"># yaml&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+<span class="hljs-attr">port:</span> <span class="hljs-number">9000</span>
+
+<span class="hljs-comment"># &#x74B0;&#x5883;&#x5909;&#x6570;&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+SC_PORT=<span class="hljs-number">9000</span>
+
+<span class="hljs-comment"># &#x5B9F;&#x884C;&#x6642;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+<span class="hljs-bullet">-</span>port <span class="hljs-number">9000</span>
+</code></pre>
+<h3 id="profiling">profiling</h3>
+<p>Go&#x8A00;&#x8A9E;&#x306E;&#x6A19;&#x6E96;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x3067;&#x3042;&#x308B; net/http/pprof&#x3092;&#x5229;&#x7528;&#x3057;&#x3066;&#x30D7;&#x30ED;&#x30D5;&#x30A1;&#x30A4;&#x30EA;&#x30F3;&#x30B0;&#x7D50;&#x679C;&#x3092;web&#x3067;&#x53C2;&#x7167;&#x3067;&#x304D;&#x308B;&#x3088;&#x3046;&#x306B;&#x3059;&#x308B;&#x8A2D;&#x5B9A;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<p><strong>Pprof API</strong></p>
+<pre><code>/debug/pprof               &#x30DD;&#x30FC;&#x30BF;&#x30EB;
+/debug/pprof/profile       CPU &#x30D7;&#x30ED;&#x30D5;&#x30A1;&#x30A4;&#x30EB;
+/debug/pprof/goroutine     goroutine &#x30D7;&#x30ED;&#x30D5;&#x30A1;&#x30A4;&#x30EB;
+/debug/pprof/heap          &#x30D2;&#x30FC;&#x30D7;&#x30D7;&#x30ED;&#x30D5;&#x30A1;&#x30A4;&#x30EB;
+/debug/pprof/block         &#x30D6;&#x30ED;&#x30C3;&#x30AD;&#x30F3;&#x30B0;&#x30D7;&#x30ED;&#x30D5;&#x30A1;&#x30A4;&#x30EB;
+/debug/pprof/threadcreate  OS &#x30B9;&#x30EC;&#x30C3;&#x30C9;&#x30D7;&#x30ED;&#x30D5;&#x30A1;&#x30A4;&#x30EB;
+</code></pre><table>
+<thead>
+<tr>
+<th>&#x8A2D;&#x5B9A;&#x5024;</th>
+<th>&#x5185;&#x5BB9;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>true</code></td>
+<td>&#x30AA;&#x30F3;</td>
+</tr>
+<tr>
+<td><code>false</code></td>
+<td>&#x30AA;&#x30D5;&#xFF08;&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#xFF09;</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-yaml"><span class="hljs-comment"># yaml&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+<span class="hljs-attr">profiling:</span> <span class="hljs-literal">true</span>
+
+<span class="hljs-comment"># &#x74B0;&#x5883;&#x5909;&#x6570;&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+SC_PROFILING=<span class="hljs-literal">true</span>
+
+<span class="hljs-comment"># &#x5B9F;&#x884C;&#x6642;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+<span class="hljs-bullet">-</span>profiling <span class="hljs-literal">true</span>
+</code></pre>
+<h3 id="examplepage">examplePage</h3>
+<p>&#x30EB;&#x30FC;&#x30C8;&#x30D1;&#x30B9;&#x306B;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x3057;&#x305F;&#x6642;&#x306B;Example&#x30DA;&#x30FC;&#x30B8;&#x3092;&#x51FA;&#x529B;&#x3059;&#x308B;&#x304B;&#x3069;&#x3046;&#x304B;&#x3092;&#x8A2D;&#x5B9A;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x8A2D;&#x5B9A;&#x5024;</th>
+<th>&#x5185;&#x5BB9;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>true</code></td>
+<td>&#x30AA;&#x30F3;</td>
+</tr>
+<tr>
+<td><code>false</code></td>
+<td>&#x30AA;&#x30D5;&#xFF08;&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#xFF09;</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-yaml"><span class="hljs-comment"># yaml&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+<span class="hljs-attr">examplePage:</span> <span class="hljs-literal">true</span>
+
+<span class="hljs-comment"># &#x74B0;&#x5883;&#x5909;&#x6570;&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+SC_EXAPLE_PAGE=<span class="hljs-literal">true</span>
+
+<span class="hljs-comment"># &#x5B9F;&#x884C;&#x6642;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+<span class="hljs-bullet">-</span>examplePage <span class="hljs-literal">true</span>
+</code></pre>
+<h3 id="errorlogging">errorLogging</h3>
+<p>&#x30A8;&#x30E9;&#x30FC;&#x30ED;&#x30B0;&#x3092;&#x6A19;&#x6E96;&#x51FA;&#x529B;&#x306B;&#x51FA;&#x529B;&#x3059;&#x308B;&#x8A2D;&#x5B9A;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x8A2D;&#x5B9A;&#x5024;</th>
+<th>&#x5185;&#x5BB9;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>true</code></td>
+<td>&#x30AA;&#x30F3;</td>
+</tr>
+<tr>
+<td><code>false</code></td>
+<td>&#x30AA;&#x30D5;&#xFF08;&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#xFF09;</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-yaml"><span class="hljs-comment"># yaml&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+<span class="hljs-attr">errorLogging:</span> <span class="hljs-literal">true</span>
+
+<span class="hljs-comment"># &#x74B0;&#x5883;&#x5909;&#x6570;&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+SC_ERROR_LOGGING=<span class="hljs-literal">true</span>
+
+<span class="hljs-comment"># &#x5B9F;&#x884C;&#x6642;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+<span class="hljs-bullet">-</span>errorLogging <span class="hljs-literal">true</span>
+</code></pre>
+<h3 id="logginglevel">logging.level</h3>
+<p>&#x30ED;&#x30AE;&#x30F3;&#x30B0;&#x30EC;&#x30D9;&#x30EB;&#x3092;&#x8A2D;&#x5B9A;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x8A2D;&#x5B9A;&#x5024;</th>
+<th>&#x5185;&#x5BB9;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>production</td>
+<td>&#x30D7;&#x30ED;&#x30C0;&#x30AF;&#x30B7;&#x30E7;&#x30F3;&#x30EC;&#x30D9;&#x30EB;</td>
+</tr>
+<tr>
+<td>development</td>
+<td>&#x958B;&#x767A;&#x30EC;&#x30D9;&#x30EB;&#xFF08;&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#xFF09;</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-yaml"><span class="hljs-comment"># yaml&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+<span class="hljs-attr">logging:</span>
+<span class="hljs-attr">  level:</span> development
+
+<span class="hljs-comment"># &#x74B0;&#x5883;&#x5909;&#x6570;&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+SC_LOGGING_LEVEL=development
+
+<span class="hljs-comment"># &#x5B9F;&#x884C;&#x6642;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+<span class="hljs-bullet">-</span>logging.level development
+</code></pre>
+<h3 id="storageprovider">storage.provider</h3>
+<p>&#x30B9;&#x30C8;&#x30EC;&#x30FC;&#x30B8;&#x3068;&#x3057;&#x3066;&#x5229;&#x7528;&#x3059;&#x308B;&#x30D7;&#x30ED;&#x30C0;&#x30AF;&#x30C8;&#x3092;&#x8A2D;&#x5B9A;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x8A2D;&#x5B9A;&#x5024;</th>
+<th>&#x5185;&#x5BB9;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>local</code></td>
+<td>&#x30ED;&#x30FC;&#x30AB;&#x30EB;&#x30B9;&#x30C8;&#x30EC;&#x30FC;&#x30B8;&#xFF08;&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#xFF09;&#x203B;Chat API&#x304C;&#x7A3C;&#x50CD;&#x3057;&#x3066;&#x3044;&#x308B;&#x30DB;&#x30B9;&#x30C8;&#x81EA;&#x8EAB;&#x306E;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x30B7;&#x30B9;&#x30C6;&#x30E0;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x307E;&#x3059;&#x3002;&#x3053;&#x308C;&#x3092;&#x8A2D;&#x5B9A;&#x3057;&#x305F;&#x5834;&#x5408;&#x306F;<code>baseUrl</code> <code>localPath</code>&#x3092;&#x8A2D;&#x5B9A;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;</td>
+</tr>
+<tr>
+<td><code>gcpStorage</code></td>
+<td><a href="https://cloud.google.com/storage/" target="_blank">Google Cloud Storage</a>&#x3092;&#x4F7F;&#x7528;&#x3057;&#x307E;&#x3059;&#x3002;&#x3053;&#x308C;&#x3092;&#x8A2D;&#x5B9A;&#x3057;&#x305F;&#x5834;&#x5408;&#x306F;<code>storage.gcpProjectId</code>  <code>storage.gcpJwtPath</code> <code>storage.uploadBucket</code> <code>storage.uploadDirectory</code> <code>storage.thumbnailBucket</code> <code>storage.thumbnailDirectory</code>&#x3092;&#x8A2D;&#x5B9A;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;</td>
+</tr>
+<tr>
+<td><code>awsS3</code></td>
+<td><a href="https://aws.amazon.com/s3" target="_blank">Amazon S3</a>&#x3092;&#x4F7F;&#x7528;&#x3057;&#x307E;&#x3059;&#x3002;&#x3053;&#x308C;&#x3092;&#x8A2D;&#x5B9A;&#x3057;&#x305F;&#x5834;&#x5408;&#x306F;<code>storage.accessKeyId</code>  <code>storage.secretAccessKey</code> <code>storage.region</code> <code>storage.uploadBucket</code> <code>storage.uploadDirectory</code> <code>storage.thumbnailBucket</code> <code>storage.thumbnailDirectory</code>&#x3092;&#x8A2D;&#x5B9A;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-yaml"><span class="hljs-comment"># yaml&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+<span class="hljs-attr">storage:</span>
+<span class="hljs-attr">  provider:</span> local
+
+<span class="hljs-comment"># &#x74B0;&#x5883;&#x5909;&#x6570;&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+SC_STORAGE_PROVIDER=local
+
+<span class="hljs-comment"># &#x5B9F;&#x884C;&#x6642;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+<span class="hljs-bullet">-</span>storage.provider local
+</code></pre>
+<h3 id="storagebaseurl">storage.baseUrl</h3>
+<p>&#x30B9;&#x30C8;&#x30EC;&#x30FC;&#x30B8;&#x30D7;&#x30ED;&#x30D0;&#x30A4;&#x30C0;&#x30FC;&#x304C;<code>local</code>&#x306E;&#x5834;&#x5408;&#x306B;&#x753B;&#x50CF;&#x306E;&#x30D9;&#x30FC;&#x30B9;URL&#x3092;&#x8A2D;&#x5B9A;&#x3057;&#x307E;&#x3059;&#x3002;&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#x306F;<code>http://localhost:[port]/v0/assets</code>&#x3067;&#x3059;&#x3002;</p>
+<pre><code class="lang-yaml"><span class="hljs-comment"># yaml&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+<span class="hljs-attr">storage:</span>
+<span class="hljs-attr">  baseUrl:</span> http://localhost:<span class="hljs-number">9000</span>/v0/assets
+
+<span class="hljs-comment"># &#x74B0;&#x5883;&#x5909;&#x6570;&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+SC_STORAGE_BASE_URL=http://localhost:<span class="hljs-number">9000</span>/v0/assets
+
+<span class="hljs-comment"># &#x5B9F;&#x884C;&#x6642;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+<span class="hljs-bullet">-</span>storage.baseUrl http://localhost:<span class="hljs-number">9000</span>/v0/assets
+</code></pre>
+<h3 id="storagelocalpath">storage.localPath</h3>
+<p>&#x30B9;&#x30C8;&#x30EC;&#x30FC;&#x30B8;&#x30D7;&#x30ED;&#x30D0;&#x30A4;&#x30C0;&#x30FC;&#x304C;<code>local</code>&#x306E;&#x5834;&#x5408;&#x306B;&#x753B;&#x50CF;&#x306E;&#x4FDD;&#x5B58;&#x5148;&#x30D1;&#x30B9;&#x3092;&#x8A2D;&#x5B9A;&#x3057;&#x307E;&#x3059;&#x3002;&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#x306F;<code>data/assets</code>&#x3067;&#x3059;&#x3002;</p>
+<pre><code class="lang-yaml"><span class="hljs-comment"># yaml&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+<span class="hljs-attr">storage:</span>
+<span class="hljs-attr">  localPath:</span> data/assets
+
+<span class="hljs-comment"># &#x74B0;&#x5883;&#x5909;&#x6570;&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+SC_STORAGE_LOCAL_PATH=data/assets
+
+<span class="hljs-comment"># &#x5B9F;&#x884C;&#x6642;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+<span class="hljs-bullet">-</span>storage.localPath data/assets
+</code></pre>
+<h3 id="storageuploadbucket">storage.uploadBucket</h3>
+<p>&#x30B9;&#x30C8;&#x30EC;&#x30FC;&#x30B8;&#x30D7;&#x30ED;&#x30D0;&#x30A4;&#x30C0;&#x30FC;&#x304C;<code>gcpStorage</code> <code>awsS3</code>&#x306E;&#x5834;&#x5408;&#x306B;&#x5143;&#x753B;&#x50CF;&#x3092;&#x4FDD;&#x5B58;&#x3059;&#x308B;&#x30D0;&#x30B1;&#x30C3;&#x30C8;&#x540D;&#x3092;&#x8A2D;&#x5B9A;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<pre><code class="lang-yaml"><span class="hljs-comment"># yaml&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+<span class="hljs-attr">storage:</span>
+<span class="hljs-attr">  uploadBucket:</span> swagchat.io
+
+<span class="hljs-comment"># &#x74B0;&#x5883;&#x5909;&#x6570;&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+SC_STORAGE_UPLOAD_BUCKET=swagchat.io
+
+<span class="hljs-comment"># &#x5B9F;&#x884C;&#x6642;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+<span class="hljs-bullet">-</span>storage.uploadBucket swagchat.io
+</code></pre>
+<h3 id="storageuploaddirectory">storage.uploadDirectory</h3>
+<p>&#x30B9;&#x30C8;&#x30EC;&#x30FC;&#x30B8;&#x30D7;&#x30ED;&#x30D0;&#x30A4;&#x30C0;&#x30FC;&#x304C;<code>gcpStorage</code> <code>awsS3</code>&#x306E;&#x5834;&#x5408;&#x306B;&#x5143;&#x753B;&#x50CF;&#x3092;&#x4FDD;&#x5B58;&#x3059;&#x308B;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x540D;&#x3092;&#x8A2D;&#x5B9A;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<pre><code class="lang-yaml"><span class="hljs-comment"># yaml&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+<span class="hljs-attr">storage:</span>
+<span class="hljs-attr">  uploadDirectory:</span> assets
+
+<span class="hljs-comment"># &#x74B0;&#x5883;&#x5909;&#x6570;&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+SC_STORAGE_UPLOAD_DIRECTORY=assets
+
+<span class="hljs-comment">#&#x5B9F;&#x884C;&#x6642;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+<span class="hljs-bullet">-</span>storage.uploadDirectory assets
+</code></pre>
+<h3 id="storagethumbnailbucket">storage.thumbnailBucket</h3>
+<p>&#x30B9;&#x30C8;&#x30EC;&#x30FC;&#x30B8;&#x30D7;&#x30ED;&#x30D0;&#x30A4;&#x30C0;&#x30FC;&#x304C;<code>gcpStorage</code> <code>awsS3</code>&#x306E;&#x5834;&#x5408;&#x306B;&#x30B5;&#x30E0;&#x30CD;&#x30A4;&#x30EB;&#x753B;&#x50CF;&#x3092;&#x4FDD;&#x5B58;&#x3059;&#x308B;&#x30D0;&#x30B1;&#x30C3;&#x30C8;&#x540D;&#x3092;&#x8A2D;&#x5B9A;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<pre><code class="lang-yaml"><span class="hljs-comment"># yaml&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+<span class="hljs-attr">storage:</span>
+<span class="hljs-attr">  thumbnailBucket:</span> swagchat.io
+
+<span class="hljs-comment"># &#x74B0;&#x5883;&#x5909;&#x6570;&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+SC_STORAGE_THUMBNAIL_BUCKET=swagchat.io
+
+<span class="hljs-comment"># &#x5B9F;&#x884C;&#x6642;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+<span class="hljs-bullet">-</span>storage.thumbnailBucket swagchat.io
+</code></pre>
+<h3 id="storagethumbnaildirectory">storage.thumbnailDirectory</h3>
+<p>&#x30B9;&#x30C8;&#x30EC;&#x30FC;&#x30B8;&#x30D7;&#x30ED;&#x30D0;&#x30A4;&#x30C0;&#x30FC;&#x304C;<code>gcpStorage</code> <code>awsS3</code>&#x306E;&#x5834;&#x5408;&#x306B;&#x30B5;&#x30E0;&#x30CD;&#x30A4;&#x30EB;&#x753B;&#x50CF;&#x3092;&#x4FDD;&#x5B58;&#x3059;&#x308B;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x540D;&#x3092;&#x8A2D;&#x5B9A;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<pre><code class="lang-yaml"><span class="hljs-comment"># yaml&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+<span class="hljs-attr">storage:</span>
+<span class="hljs-attr">  thumbnailDirectory:</span> assets
+
+<span class="hljs-comment"># &#x74B0;&#x5883;&#x5909;&#x6570;&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+SC_STORAGE_THUMBNAIL_DIRECTORY=assets
+
+<span class="hljs-comment"># &#x5B9F;&#x884C;&#x6642;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+<span class="hljs-bullet">-</span>storage.thumbnailDirectory assets
+</code></pre>
+<h3 id="storagegcpprojectid">storage.gcpProjectId</h3>
+<p>&#x30B9;&#x30C8;&#x30EC;&#x30FC;&#x30B8;&#x30D7;&#x30ED;&#x30D0;&#x30A4;&#x30C0;&#x30FC;&#x304C;<code>gcpStorage</code>&#x306E;&#x5834;&#x5408;&#x306B;&#x5BFE;&#x8C61;&#x306E;Google Cloud Storage&#x306E;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;ID&#x3092;&#x8A2D;&#x5B9A;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<pre><code class="lang-yaml"><span class="hljs-comment"># yaml&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+<span class="hljs-attr">storage:</span>
+<span class="hljs-attr">  gcpProjectId:</span> assets
+
+<span class="hljs-comment"># &#x74B0;&#x5883;&#x5909;&#x6570;&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+SC_STORAGE_GCP_PROJECT_ID=assets
+
+<span class="hljs-comment"># &#x5B9F;&#x884C;&#x6642;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+<span class="hljs-bullet">-</span>storage.gcpProjectId assets
+</code></pre>
+<h3 id="storagegcpjwtpath">storage.gcpJwtPath</h3>
+<p>&#x30B9;&#x30C8;&#x30EC;&#x30FC;&#x30B8;&#x30D7;&#x30ED;&#x30D0;&#x30A4;&#x30C0;&#x30FC;&#x304C;<code>gcpStorage</code>&#x306E;&#x5834;&#x5408;&#x306B;&#x5BFE;&#x8C61;&#x306E;Google Cloud Storage&#x306E;JWT&#x306E;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x30D1;&#x30B9;&#x3092;&#x8A2D;&#x5B9A;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<pre><code class="lang-yaml"><span class="hljs-comment"># yaml&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+<span class="hljs-attr">storage:</span>
+<span class="hljs-attr">  gcpJwtPath:</span> assets
+
+<span class="hljs-comment"># &#x74B0;&#x5883;&#x5909;&#x6570;&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+SC_STORAGE_GCP_JWT_PATH=assets
+
+<span class="hljs-comment"># &#x5B9F;&#x884C;&#x6642;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+<span class="hljs-bullet">-</span>storage.gcpJwtPath assets
+</code></pre>
+<h3 id="storageawsregion">storage.awsRegion</h3>
+<p>&#x30B9;&#x30C8;&#x30EC;&#x30FC;&#x30B8;&#x30D7;&#x30ED;&#x30D0;&#x30A4;&#x30C0;&#x30FC;&#x304C;<code>awsS3</code>&#x306E;&#x5834;&#x5408;&#x306B;&#x5BFE;&#x8C61;&#x306E;Amazon S3&#x306E;&#x30EA;&#x30FC;&#x30B8;&#x30E7;&#x30F3;&#x3092;&#x8A2D;&#x5B9A;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<pre><code class="lang-yaml"><span class="hljs-comment"># yaml&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+<span class="hljs-attr">storage:</span>
+<span class="hljs-attr">  awsRegion:</span> ap-northeast<span class="hljs-bullet">-1</span>
+
+<span class="hljs-comment"># &#x74B0;&#x5883;&#x5909;&#x6570;&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+SC_STORAGE_AWS_REGION=ap-northeast<span class="hljs-bullet">-1</span>
+
+<span class="hljs-comment"># &#x5B9F;&#x884C;&#x6642;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+<span class="hljs-bullet">-</span>storage.awsRegion ap-northeast<span class="hljs-bullet">-1</span>
+</code></pre>
+<h3 id="storageawsaccesskeyid">storage.awsAccessKeyId</h3>
+<p>&#x30B9;&#x30C8;&#x30EC;&#x30FC;&#x30B8;&#x30D7;&#x30ED;&#x30D0;&#x30A4;&#x30C0;&#x30FC;&#x304C;<code>awsS3</code>&#x306E;&#x5834;&#x5408;&#x306B;&#x5BFE;&#x8C61;&#x306E;Amazon S3&#x306E;IAM&#x306E;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x30AD;&#x30FC;&#x3092;&#x8A2D;&#x5B9A;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<pre><code class="lang-yaml"><span class="hljs-comment"># yaml&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+<span class="hljs-attr">storage:</span>
+<span class="hljs-attr">  awsAccessKeyId:</span> YOUR_ACCESS_KEY_ID
+
+<span class="hljs-comment"># &#x74B0;&#x5883;&#x5909;&#x6570;&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+SC_STORAGE_AWS_REGION=YOUR_ACCESS_KEY_ID
+
+<span class="hljs-comment"># &#x5B9F;&#x884C;&#x6642;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+<span class="hljs-bullet">-</span>storage.awsAccessKeyId YOUR_ACCESS_KEY_ID
+</code></pre>
+<h3 id="storageawssecretaccesskey">storage.awsSecretAccessKey</h3>
+<p>&#x30B9;&#x30C8;&#x30EC;&#x30FC;&#x30B8;&#x30D7;&#x30ED;&#x30D0;&#x30A4;&#x30C0;&#x30FC;&#x304C;<code>awsS3</code>&#x306E;&#x5834;&#x5408;&#x306B;&#x5BFE;&#x8C61;&#x306E;Amazon S3&#x306E;IAM&#x306E;&#x30B7;&#x30FC;&#x30AF;&#x30EC;&#x30C3;&#x30C8;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x30AD;&#x30FC;&#x3092;&#x8A2D;&#x5B9A;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<pre><code class="lang-yaml"><span class="hljs-comment"># yaml&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+<span class="hljs-attr">storage:</span>
+<span class="hljs-attr">  awsSecretAccessKey:</span> YOUR_SECRET_ACCESS_KEY
+
+<span class="hljs-comment"># &#x74B0;&#x5883;&#x5909;&#x6570;&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+SC_STORAGE_AWS_SECRET_ACCESS_KEY=YOUR_SECRET_ACCESS_KEY
+
+<span class="hljs-comment"># &#x5B9F;&#x884C;&#x6642;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x3067;&#x306E;&#x8A2D;&#x5B9A;</span>
+<span class="hljs-bullet">-</span>storage.awsSecretAccessKey YOUR_SECRET_ACCESS_KEY
+</code></pre>
+<hr>
+<ul>
+<li><a href="./">&#x6982;&#x8981;</a></li>
+<li><a href="launch.html">&#x8D77;&#x52D5;&#x65B9;&#x6CD5;</a></li>
+<li><a href="reference.html">&#x30EA;&#x30D5;&#x30A1;&#x30EC;&#x30F3;&#x30B9;</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="reference.html" class="navigation navigation-prev " aria-label="Previous page: リファレンス">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="settings.html#port" class="navigation navigation-next " aria-label="Next page: port">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"設定","level":"2.1.4","depth":2,"next":{"title":"port","level":"2.1.4.1","depth":3,"anchor":"#port","path":"chat-api/settings.md","ref":"chat-api/settings.md#port","articles":[]},"previous":{"title":"リファレンス","level":"2.1.3","depth":2,"path":"chat-api/reference.md","ref":"chat-api/reference.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"swagchat SDK","language":"jp","gitbook":"*"},"file":{"path":"chat-api/settings.md","mtime":"2017-09-20T06:22:45.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-09-20T16:58:48.911Z"},"basePath":"..","book":{"language":"jp"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Button</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" type="text/css" media="all">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" type="text/css" media="all">
+    <link rel="stylesheet" href="../../react-swagchat.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="../../uikit.css" media="all">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="swagchat" class="swagchat" />
+    <script src="../../react-swagchat.min.js"></script>
+    <script type="text/babel">
+      ReactDOM.render(
+        <div>
+          <div className="flex-start">
+            <Swag.Button
+              shape="square"
+              text="square"
+              icon={<i className="material-icons">chat</i>}
+              onClick={() => alert("square")}
+            />
+            <Swag.Button
+              shape="squareRound"
+              text="squareRound"
+              icon={<i className="material-icons">chat</i>}
+              hoverBorderColor="#2E7D32"
+              hoverBackgroundColor="#2E7D32"
+              onClick={() => alert("squareRound")}
+            />
+            <Swag.Button
+              shape="round"
+              text="round"
+              icon={<i className="material-icons">chat</i>}
+              fontColor="#EC407A"
+              hoverFontColor="#ffffff"
+              borderColor="#EC407A"
+              hoverBorderColor="#D81B60"
+              backgroundColor="#ffffff"
+              hoverBackgroundColor="#EC407A"
+              onClick={() => alert("round")}
+            />
+          </div>
+          <div className="flex-start">
+            <Swag.Button
+              color="primary"
+              text="primary"
+              icon={<i className="material-icons">chat</i>}
+              onClick={() => alert("primary")}
+            />
+            <Swag.Button
+              color="secondary"
+              text="secondary"
+              icon={<i className="material-icons">chat</i>}
+              onClick={() => alert("secondary")}
+            />
+          </div>
+          <div className="flex-start">
+            <Swag.Button
+              color="success"
+              text="success"
+              icon={<i className="material-icons">chat</i>}
+              onClick={() => alert("success")}
+            />
+            <Swag.Button
+              color="danger"
+              text="danger"
+              icon={<i className="material-icons">chat</i>}
+              onClick={() => alert("danger")}
+            />
+            <Swag.Button
+              color="warning"
+              text="warning"
+              icon={<i className="material-icons">chat</i>}
+              onClick={() => alert("warning")}
+            />
+            <Swag.Button
+              color="info"
+              text="info"
+              icon={<i className="material-icons">chat</i>}
+              onClick={() => alert("info")}
+            />
+            <Swag.Button
+              color="disable"
+              text="disable"
+              icon={<i className="material-icons">chat</i>}
+              onClick={() => alert("disable")}
+            />
+          </div>
+          <div className="flex-start">
+            <Swag.Button
+              color="dark"
+              text="dark"
+              icon={<i className="material-icons">chat</i>}
+              onClick={() => alert("dark")}
+            />
+            <Swag.Button
+              color="light"
+              text="light"
+              icon={<i className="material-icons">chat</i>}
+              onClick={() => alert("light")}
+            />
+          </div>
+          <div className="flex-start">
+            <Swag.Button
+              color="linkPrimary"
+              text="linkPrimary"
+              icon={<i className="material-icons">chat</i>}
+              onClick={() => alert("linkPrimary")}
+            />
+            <Swag.Button
+              color="linkBlack"
+              text="linkBlack"
+              icon={<i className="material-icons">chat</i>}
+              onClick={() => alert("linkBlack")}
+            />
+            <Swag.Button
+              color="linkWhite"
+              text="linkWhite"
+              icon={<i className="material-icons">chat</i>}
+              onClick={() => alert("linkWhite")}
+            />
+          </div>
+        </div>,
+        document.getElementById('swagchat')
+      );
+    </script>
+  </body>
+</html>
