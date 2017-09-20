@@ -1,2 +1,7 @@
 .DS_Store
 gitbook/_book
+public/node_modules
+public/package-lock.json
+public/package.json
+public/assets/config.rb
+public/assets/.sass-cache

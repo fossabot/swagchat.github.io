@@ -1,0 +1,32 @@
+<svg id="3e9c5587-c1c5-45a3-ab64-8cc21c843d24" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1217">
+  <defs>
+    <style>
+      .\35 640b57b-65ae-4fcc-ba8e-97f017adf113 {
+        fill: url(#b2f4f6b7-e218-4472-a93d-3cab2dc5ecec);
+      }
+
+      .\36 c927af7-cb6e-45eb-b39b-31ada1aef379 {
+        fill: url(#5cd7cc63-a2b8-43fc-8a5b-24ff45ab660a);
+      }
+    </style>
+    <linearGradient id="b2f4f6b7-e218-4472-a93d-3cab2dc5ecec" data-name="名称未設定グラデーション 67" x1="338.78" y1="779.75" x2="743.39" y2="375.14" gradientUnits="userSpaceOnUse">
+      <stop offset="0.11" stop-color="#adff55"/>
+      <stop offset="0.32" stop-color="#9fff81"/>
+      <stop offset="0.61" stop-color="#8effb6"/>
+      <stop offset="0.83" stop-color="#83ffd8"/>
+      <stop offset="0.94" stop-color="#7fffe4"/>
+    </linearGradient>
+    <linearGradient id="5cd7cc63-a2b8-43fc-8a5b-24ff45ab660a" data-name="名称未設定グラデーション 194" x1="983.43" y1="430.75" x2="1803.96" y2="928.87" gradientTransform="matrix(1.04, 0.02, -0.01, 1, -27.95, -19.74)" gradientUnits="userSpaceOnUse">
+      <stop offset="0.15" stop-color="#2792ff"/>
+      <stop offset="0.28" stop-color="#5885f7"/>
+      <stop offset="0.46" stop-color="#9375ed"/>
+      <stop offset="0.63" stop-color="#c169e5"/>
+      <stop offset="0.78" stop-color="#e260e0"/>
+      <stop offset="0.9" stop-color="#f75bdc"/>
+      <stop offset="0.98" stop-color="#fe59db"/>
+    </linearGradient>
+  </defs>
+  <title>home-section02</title>
+  <path class="5640b57b-65ae-4fcc-ba8e-97f017adf113" d="M715.09,839.6,308,801.11c-41.85-4-75.92-33.33-83.68-72.13L180.66,510.38c-10-50.07,26.44-97.88,80.15-105.15l441.74-59.81C757.65,338,807,378.08,807,430.34V761.58C807,808,764.29,844.25,715.09,839.6Z"/>
+  <path class="6c927af7-cb6e-45eb-b39b-31ada1aef379" d="M1653.66,883.32l-536.43,54.23c-45.5,7.56-87-26.67-86.3-71.25L1055.42,404c-.26-5,7.13-80.74,8-85.7,7-41.24,50.31-68.69,93.44-56.47l558.8,158.42c37,10.5,59.32,46.72,51.48,82.93-.33,1.55-.66,3.09-.9,4.66l-48,315.23a69.87,69.87,0,0,1-15.85,35.11,73.78,73.78,0,0,1-33.67,22.16A73,73,0,0,1,1653.66,883.32Z"/>
+</svg>
