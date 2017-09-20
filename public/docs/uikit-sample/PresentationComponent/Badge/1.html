@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Badge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" type="text/css" media="all">
+    <link rel="stylesheet" href="../../react-swagchat.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="../../uikit.css" media="all">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="swagchat" class="swagchat" />
+    <script src="../../react-swagchat.min.js"></script>
+    <script type="text/babel">
+      ReactDOM.render(
+        <div className="horizontal">
+          <Swag.Badge
+            count={100}
+            color="primary"
+          />
+          <Swag.Badge
+            count={100}
+            color="secondary"
+          />
+          <Swag.Badge
+            count={100}
+            color="success"
+          />
+          <Swag.Badge
+            count={100}
+            color="danger"
+          />
+          <Swag.Badge
+            count={100}
+            color="warning"
+          />
+          <Swag.Badge
+            count={100}
+            color="info"
+          />
+          <Swag.Badge
+            count={100}
+            color="disable"
+          />
+          <Swag.Badge
+            count={100}
+            color="dark"
+          />
+          <Swag.Badge
+            count={100}
+            color="light"
+          />
+        </div>,
+        document.getElementById('swagchat')
+      );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1299 @@
+
+<!DOCTYPE HTML>
+<html lang="jp" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>PhotoEdit · swagchat SDK</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../../website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="RoomList.html" />
+    
+    
+    <link rel="prev" href="ModalAction.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../../">
+            
+                <a href="../../../../">
+            
+                    
+                    はじめに
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../../start-guide.html">
+            
+                <a href="../../../../start-guide.html">
+            
+                    
+                    スタートガイド
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../../../quick-start/">
+            
+                <a href="../../../../quick-start/">
+            
+                    
+                    クイックスタート
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../../../quick-start/local.html">
+            
+                <a href="../../../../quick-start/local.html">
+            
+                    
+                    ローカル環境で起動
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../../../quick-start/paas.html">
+            
+                <a href="../../../../quick-start/paas.html">
+            
+                    
+                    PaaSで起動
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../../../production-deploy.html">
+            
+                <a href="../../../../production-deploy.html">
+            
+                    
+                    プロダクションデプロイ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    Chat API
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../../../chat-api/">
+            
+                <a href="../../../../chat-api/">
+            
+                    
+                    概要
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../../../../chat-api/launch.html">
+            
+                <a href="../../../../chat-api/launch.html">
+            
+                    
+                    起動方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../../../../chat-api/reference.html">
+            
+                <a href="../../../../chat-api/reference.html">
+            
+                    
+                    リファレンス
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../../../../chat-api/settings.html">
+            
+                <a href="../../../../chat-api/settings.html">
+            
+                    
+                    設定
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.4.1" data-path="../../../../chat-api/settings.html">
+            
+                <a href="../../../../chat-api/settings.html#port">
+            
+                    
+                    port
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.2" data-path="../../../../chat-api/settings.html">
+            
+                <a href="../../../../chat-api/settings.html#profiling">
+            
+                    
+                    profiling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.3" data-path="../../../../chat-api/settings.html">
+            
+                <a href="../../../../chat-api/settings.html#errorlogging">
+            
+                    
+                    errorLogging
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.4" data-path="../../../../chat-api/settings.html">
+            
+                <a href="../../../../chat-api/settings.html#logginglevel">
+            
+                    
+                    logging.level
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5" >
+            
+                <span>
+            
+                    
+                    storage
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.4.5.1" data-path="../../../../chat-api/settings.html">
+            
+                <a href="../../../../chat-api/settings.html#storageprovider">
+            
+                    
+                    provider
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5.2" data-path="../../../../chat-api/settings.html">
+            
+                <a href="../../../../chat-api/settings.html#storagebaseUrl">
+            
+                    
+                    baseUrl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5.3" data-path="../../../../chat-api/settings.html">
+            
+                <a href="../../../../chat-api/settings.html#storagelocalpath">
+            
+                    
+                    localPath
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5.4" data-path="../../../../chat-api/settings.html">
+            
+                <a href="../../../../chat-api/settings.html#storageuploadbucket">
+            
+                    
+                    uploadBucket
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5.5" data-path="../../../../chat-api/settings.html">
+            
+                <a href="../../../../chat-api/settings.html#storageuploaddirectory">
+            
+                    
+                    uploadDirectory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5.6" data-path="../../../../chat-api/settings.html">
+            
+                <a href="../../../../chat-api/settings.html#storagethumbnailbucket">
+            
+                    
+                    thumbnailBucket
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5.7" data-path="../../../../chat-api/settings.html">
+            
+                <a href="../../../../chat-api/settings.html#storagethumbnaildirectory">
+            
+                    
+                    thumbnailDirectory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5.8" data-path="../../../../chat-api/settings.html">
+            
+                <a href="../../../../chat-api/settings.html#storagegcpprojectid">
+            
+                    
+                    gcpProjectId
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5.9" data-path="../../../../chat-api/settings.html">
+            
+                <a href="../../../../chat-api/settings.html#storagegcpjwtpath">
+            
+                    
+                    gcpJwtPath
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5.10" data-path="../../../../chat-api/settings.html">
+            
+                <a href="../../../../chat-api/settings.html#storageawsregion">
+            
+                    
+                    awsRegion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5.11" data-path="../../../../chat-api/settings.html">
+            
+                <a href="../../../../chat-api/settings.html#storageawsaccesskeyid">
+            
+                    
+                    awsAccessKeyId
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.5.12" data-path="../../../../chat-api/settings.html">
+            
+                <a href="../../../../chat-api/settings.html#storageawssecretaccesskey">
+            
+                    
+                    awsSecretAccessKey
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <span>
+            
+                    
+                    RTM API
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../../../../rtm-api/">
+            
+                <a href="../../../../rtm-api/">
+            
+                    
+                    概要
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../../../../rtm-api/launch.html">
+            
+                <a href="../../../../rtm-api/launch.html">
+            
+                    
+                    起動方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" >
+            
+                <span>
+            
+                    
+                    SDK
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../../../../sdk/">
+            
+                <a href="../../../../sdk/">
+            
+                    
+                    概要
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../../../../sdk/install.html">
+            
+                <a href="../../../../sdk/install.html">
+            
+                    
+                    インストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" >
+            
+                <span>
+            
+                    
+                    UIKit
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    概要
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../../../browser/">
+            
+                <a href="../../../browser/">
+            
+                    
+                    タグを設置して動かす
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.2.1" data-path="../../../browser/chat-apps/messenger.html">
+            
+                <a href="../../../browser/chat-apps/messenger.html">
+            
+                    
+                    メッセンジャー
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2.2" data-path="../../../browser/chat-apps/simple-messenger.html">
+            
+                <a href="../../../browser/chat-apps/simple-messenger.html">
+            
+                    
+                    シンプルメッセンジャー
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    チャットアプリケーションを組み込む
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.3.1" data-path="../../install.html">
+            
+                <a href="../../install.html">
+            
+                    
+                    インストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    リファレンス
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.3.2.1" data-path="../ApplicationComponent/">
+            
+                <a href="../ApplicationComponent/">
+            
+                    
+                    アプリケーションコンポーネント
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.3.2.1.1" data-path="../ApplicationComponent/Messenger.html">
+            
+                <a href="../ApplicationComponent/Messenger.html">
+            
+                    
+                    Messenger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.1.2" data-path="../ApplicationComponent/SimpleMessenger.html">
+            
+                <a href="../ApplicationComponent/SimpleMessenger.html">
+            
+                    
+                    SimpleMessenger
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.2" data-path="../ContainerComponent/">
+            
+                <a href="../ContainerComponent/">
+            
+                    
+                    コンテナーコンポーネント
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.3.2.2.1" data-path="../ContainerComponent/MessagePage.html">
+            
+                <a href="../ContainerComponent/MessagePage.html">
+            
+                    
+                    MessagePage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.2.2" data-path="../ContainerComponent/RoomListPage.html">
+            
+                <a href="../ContainerComponent/RoomListPage.html">
+            
+                    
+                    RoomListPage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.2.3" data-path="../ContainerComponent/RoomSettingPage.html">
+            
+                <a href="../ContainerComponent/RoomSettingPage.html">
+            
+                    
+                    RoomSettingPage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.2.4" data-path="../ContainerComponent/SelectContactPage.html">
+            
+                <a href="../ContainerComponent/SelectContactPage.html">
+            
+                    
+                    SelectContactPage
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    プレゼンテーションコンポーネント
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.3.2.3.1" data-path="Avatar.html">
+            
+                <a href="Avatar.html">
+            
+                    
+                    Avatar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.3.2" data-path="Badge.html">
+            
+                <a href="Badge.html">
+            
+                    
+                    Badge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.3.3" data-path="Button.html">
+            
+                <a href="Button.html">
+            
+                    
+                    Button
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.3.4" data-path="ContactList.html">
+            
+                <a href="ContactList.html">
+            
+                    
+                    ContactList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.3.5" data-path="MessageBody.html">
+            
+                <a href="MessageBody.html">
+            
+                    
+                    MessageBody
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.3.6" data-path="Modal.html">
+            
+                <a href="Modal.html">
+            
+                    
+                    Modal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.3.7" data-path="ModalAction.html">
+            
+                <a href="ModalAction.html">
+            
+                    
+                    ModalAction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.1.3.2.3.8" data-path="PhotoEdit.html">
+            
+                <a href="PhotoEdit.html">
+            
+                    
+                    PhotoEdit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.3.9" data-path="RoomList.html">
+            
+                <a href="RoomList.html">
+            
+                    
+                    RoomList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.3.10" data-path="RoomSettingButtons.html">
+            
+                <a href="RoomSettingButtons.html">
+            
+                    
+                    RoomSettingButtons
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.3.11" data-path="SubTitleBar.html">
+            
+                <a href="SubTitleBar.html">
+            
+                    
+                    SubTitleBar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.3.12" data-path="TextAvatar.html">
+            
+                <a href="TextAvatar.html">
+            
+                    
+                    TextAvatar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.3.13" data-path="TopBar.html">
+            
+                <a href="TopBar.html">
+            
+                    
+                    TopBar
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.4" data-path="../AddonMessage/">
+            
+                <a href="../AddonMessage/">
+            
+                    
+                    メッセージアドオン
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.3.2.4.1" data-path="../AddonMessage/Text.html">
+            
+                <a href="../AddonMessage/Text.html">
+            
+                    
+                    Text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3.2.4.2" data-path="../AddonMessage/Image.html">
+            
+                <a href="../AddonMessage/Image.html">
+            
+                    
+                    Image
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.4" data-path="../../../contributors/">
+            
+                <a href="../../../contributors/">
+            
+                    
+                    コントリビュータ向け
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.4.1" data-path="../../../contributors/build-system.html">
+            
+                <a href="../../../contributors/build-system.html">
+            
+                    
+                    ビルドシステム
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.4.2" data-path="../../../contributors/application-architecture.html">
+            
+                <a href="../../../contributors/application-architecture.html">
+            
+                    
+                    アプリケーションアーキテクチャ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../../.." >PhotoEdit</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="uikit">UIKit</h1>
+<h2 id="photoedit">PhotoEdit</h2>
+<iframe class="code" src="../../../../../uikit-sample/PresentationComponent/PhotoEdit/1.html"></iframe>
+
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { PhotoEdit } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-swagchat&apos;</span>;
+
+<span class="hljs-keyword">const</span> PhotoEditExample = () =&gt; (
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">PhotoEdit</span>
+    <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://dummyimage.com/300x300/3768c4/fff&amp;text=circle&quot;</span>
+    <span class="hljs-attr">shape</span>=<span class="hljs-string">&quot;circle&quot;</span>
+    <span class="hljs-attr">onUpdatePhoto</span>=<span class="hljs-string">{()</span> =&gt;</span> alert(&apos;Photo updated!&apos;)}
+  /&gt;
+);
+</span></code></pre>
+<table>
+<thead>
+<tr>
+<th>&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;</th>
+<th>&#x578B;</th>
+<th>&#x3000;&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;</th>
+<th>&#x5FC5;&#x9808;</th>
+<th>&#x8AAC;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>src</td>
+<td>string</td>
+<td></td>
+<td>&#x2714;</td>
+<td>&#x753B;&#x50CF;URL</td>
+</tr>
+<tr>
+<td>shape</td>
+<td>string</td>
+<td><code>circle</code></td>
+<td></td>
+<td>&#x30DC;&#x30BF;&#x30F3;&#x306E;&#x5F62;&#x72B6;<br><code>circle</code><br><code>square</code><br><code>squareRound</code><br><code>round</code><br></td>
+</tr>
+<tr>
+<td>className</td>
+<td>string</td>
+<td>&#x7A7A;&#x6587;&#x5B57;</td>
+<td></td>
+<td>&#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x30AF;&#x30E9;&#x30B9;&#x540D;</td>
+</tr>
+<tr>
+<td>style</td>
+<td>object</td>
+<td><code>{}</code></td>
+<td></td>
+<td>&#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x30A4;&#x30F3;&#x30E9;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30A4;&#x30EB;<span class="property-example">&#x4F8B;&#x3000;<code>{fontSize: &apos;30px&apos;}</code></span></td>
+</tr>
+<tr>
+<td>onUpdatePhoto</td>
+<td>function</td>
+<td><code>() =&gt; {}</code></td>
+<td></td>
+<td>&#x753B;&#x50CF;&#x30A2;&#x30C3;&#x30D7;&#x30ED;&#x30FC;&#x30C9;&#x6642;&#x306B;&#x30B3;&#x30FC;&#x30EB;&#x3055;&#x308C;&#x308B;&#x95A2;&#x6570;</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ModalAction.html" class="navigation navigation-prev " aria-label="Previous page: ModalAction">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="RoomList.html" class="navigation navigation-next " aria-label="Next page: RoomList">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"PhotoEdit","level":"5.1.3.2.3.8","depth":5,"next":{"title":"RoomList","level":"5.1.3.2.3.9","depth":5,"path":"uikit/nodejs/reference/PresentationComponent/RoomList.md","ref":"uikit/nodejs/reference/PresentationComponent/RoomList.md","articles":[]},"previous":{"title":"ModalAction","level":"5.1.3.2.3.7","depth":5,"path":"uikit/nodejs/reference/PresentationComponent/ModalAction.md","ref":"uikit/nodejs/reference/PresentationComponent/ModalAction.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"swagchat SDK","language":"jp","gitbook":"*"},"file":{"path":"uikit/nodejs/reference/PresentationComponent/PhotoEdit.md","mtime":"2017-09-19T02:15:01.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-09-20T16:58:48.911Z"},"basePath":"../../../..","book":{"language":"jp"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../../../gitbook/gitbook.js"></script>
+    <script src="../../../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

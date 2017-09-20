@@ -1,6 +1,6 @@
 # Chat API
 
-## 起動
+## 起動方法
 
 Chat APIを起動するには以下の2つの方法があります。
 
@@ -38,3 +38,9 @@ Githubの[リリースページ](https://github.com/fairway-corp/swagchat-chat-a
 # macOSの場合
 ./swagchat-api_darwin_amd64 -port 9001
 ```
+
+---
+
+* [概要](./README.md)
+* [リファレンス](./reference.md)
+* [設定](./settings.md)

@@ -7,16 +7,6 @@ WebSocketを利用している為、クライアントと直接コネクショ�
 
 なお、RTM APIはオンメモリで動くアプリケーションなのでデータベースは利用しておりません。
 
-本プロダクトのソフトウェアライセンスは[MIT License](https://github.com/fairway-corp/swagchat-rtm-api/blob/master/LICENSE)となっております。
+---
 
-***
-
-RTM APIはGo言語で実装されています。
-
-#### Go言語のバージョン
-
-1.7以上
-
-#### パッケージ管理
-
-[Godep](https://github.com/tools/godep)
+* [起動方法](./launch.md)

@@ -62,6 +62,25 @@ SC_PROFILING=true
 -profiling true
 ```
 
+### examplePage
+
+ルートパスにアクセスした時にExampleページを出力するかどうかを設定できます。
+
+| 設定値 | 内容 |
+| ------------- | ------------- |
+| `true` | オン |
+| `false` | オフ（デフォルト） |
+
+```yaml
+# yamlでの設定
+examplePage: true
+
+# 環境変数での設定
+SC_EXAPLE_PAGE=true
+
+# 実行時パラメータでの設定
+-examplePage true
+```
 
 ### errorLogging
 
@@ -302,3 +321,9 @@ SC_STORAGE_AWS_SECRET_ACCESS_KEY=YOUR_SECRET_ACCESS_KEY
 # 実行時パラメータでの設定
 -storage.awsSecretAccessKey YOUR_SECRET_ACCESS_KEY
 ```
+
+---
+
+* [概要](./README.md)
+* [起動方法](./launch.md)
+* [リファレンス](./reference.md)

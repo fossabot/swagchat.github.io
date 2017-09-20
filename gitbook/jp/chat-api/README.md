@@ -8,8 +8,6 @@ Chat APIはチャットアプリケーションに必要なのルームやユー
 特定のデータベースやストレージに依存しないように設計されており現在は以下のプロダクトが利用可能です。
 利用するプロダクトの設定はyamlによるファイルや環境変数、実行時パラメータで設定が可能です。設定できる内容は他にも数多くありますので詳細は[設定](settings.md)をご参照下さい。
 
-本プロダクトのソフトウェアライセンスは[MIT License](https://github.com/fairway-corp/swagchat-chat-api/blob/master/LICENSE)となっております。
-
 #### データベース
 
 * [SQLite](https://sqlite.org/index.html)
@@ -30,14 +28,8 @@ Chat APIはチャットアプリケーションに必要なのルームやユー
 
 * [Amazon SNS](https://aws.amazon.com/jp/sns/)
 
-***
+---
 
-Chat APIはGo言語で実装されています。
-
-#### Go言語のバージョン
-
-1.7以上
-
-#### パッケージ管理
-
-[Godep](https://github.com/tools/godep)
+* [起動方法](./launch.md)
+* [リファレンス](./reference.md)
+* [設定](./settings.md)

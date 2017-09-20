@@ -1,6 +1,6 @@
 # RTM API (Real Time Messaging API)
 
-## 起動
+## 起動方法
 
 RTM APIを起動するには以下の2つの方法があります。
 
