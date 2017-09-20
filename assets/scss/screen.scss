@@ -1,0 +1,482 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass";
+@import "compass/reset";
+@import "compass/css3";
+/* font */
+$font-family: -apple-system, BlinkMacSystemFont, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Hiragino Kaku Gothic ProN", "游ゴシック体", YuGothic, "YuGothic M", "Helvetica Neue", "Roboto", sans-serif;
+
+$line-height: 1.7;
+$letter-spacing: 0.1em;
+$site-width: 1280px;
+
+
+/* colors */
+$font-color: #222;
+$font-color-w: #fefefe;
+$link-color: #333;
+$border-color-w: #dedede;
+$border-color-d: #212121;
+$bg-color-ow: #f9f9f9;
+$bg-color-d: #888; 
+$border-color-g: #21A239;
+$border-color-dg: #0D7F1D;
+$border-color-lg: #79D887;
+$border-color-p: #750FD6;
+$border-color-dp: #6415B7;
+$border-color-y: #EAC113;
+$font-color-red: #a94442;
+/* width, radius */
+$radius-xl: 12px;
+$radius-l: 9px;
+$radius-m: 6px;
+$radius-s: 3px;
+/*font-size (rem)*/
+$font-size: 16px;
+$main-width: 75%;
+$main-width-sp: 95%;
+$base-pad: 4rem;
+$base-pad-sp: 2rem;
+$base-pad-sp-s: 1rem;
+$letter-space-s: 0.025rem;
+$letter-space-m: 0.05rem;
+$letter-space-l: 0.08rem;
+$line-height: 1.7;
+$m120: 7.5rem;
+$m100: 6.25rem;
+$mb-xl:4.5rem;
+$mb-l: 4rem;
+$mb-m: 2.75rem;
+$mb-s: 1.5rem;
+$fs-h1: 3rem;
+$fs-h2: 2.5rem;
+$fs-h3s: 2.75rem;
+$fs-h3: 2rem;
+$fs-h4: 1.5rem;
+$fs-h5: 1rem;
+$fs-h6: 0.5rem;
+$fs-p : 1rem;
+
+/*mixin*/
+@mixin breakSm {
+	/*	@media screen and (min-width: 35.5em)*/
+  @media screen and (max-width: 35.499em) {
+    @content;
+  }
+}
+@mixin breakMd {
+	/*@media screen and (min-width: 48em)*/
+  @media screen and (max-width: 47.999em) {
+    @content;
+  }
+}
+@mixin breakLg {
+	/*@media screen and (min-width: 64em)*/
+  @media screen and (max-width: 63.999em) {
+    @content;
+  }
+}
+@mixin breakXl {
+	/*@media screen and (min-width: 80em)*/
+  @media screen and (max-width: 79.999em) {
+    @content;
+  }
+}
+@mixin clearfix() {
+  &::after {
+    content: "";
+    clear: both;
+    display: block;
+    visibility: hidden;
+  }
+}
+
+
+@font-face {
+  font-family: "YuGothic M";
+  src: local("Yu Gothic Medium"), local("Yu Gothic");
+  font-weight: 500;
+}
+
+*,:before,:after {
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+	font-size: $font-size;
+	color: $font-color;
+	font-family: $font-family !important;
+	letter-spacing: 1.25px;
+	font-feature-settings: "palt" 1;
+	font-kerning: auto;
+	background-color: $bg-color-ow;
+	margin: 0;
+}
+html {
+	min-height: 100%;
+	position: relative;
+}
+body {}
+main {
+	background-color: $bg-color-ow;
+}
+
+.pure-g [class *= "pure-u"] {
+	color: $font-color;
+  	font-size: $font-size;
+  	line-height: $line-height;
+  	letter-spacing: $letter-spacing;
+  	font-family: $font-family;
+}
+a {
+    text-decoration: none;
+	color: darken($link-color,20%);
+    @include transition(color 0.3s ease-in);
+    &:hover {
+        text-decoration: none;
+        color: lighten($link-color, 20%);
+		background-color: rgba(0,0,0,0) !important;
+    }
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: $font-family;
+    line-height: 1.25;
+    font-weight: 200;
+	margin-top: 0.75rem;
+	margin-bottom: 1.5rem;
+}
+.h1, h1 {
+	font-size: $fs-h1;
+}
+.h2, h2 {
+	font-size: $fs-h2;
+}
+.h3, h3 {
+	font-size: $fs-h3;
+}
+.h4, h4 {
+	font-size: $fs-h4;
+}
+.h5, h5 {
+	font-size: $fs-h5;
+}
+p {
+	font-size: $fs-p;
+}
+.h6, h6 {
+	font-size: $fs-h6;
+}
+#scroll-to-top {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: 0px none;
+    z-index: 100;
+    color: rgba(120, 120, 120, 0.5);
+    @include transition(color 0.3s ease-in-out 0s);
+    &:hover {
+        color: rgba(127, 127, 127, 0.75);
+    }
+}
+
+.container {
+	width: 95%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.container-header {
+	width: 90%;
+}
+.container-main {
+	width: 100%;
+	overflow: hidden;
+}
+.pad-s {
+	padding: 1rem;
+	overflow: hidden;
+}
+.pad {
+	padding: 2rem;
+	overflow: hidden;
+}
+.pad-img {
+	padding: 1.5rem;
+	overflow: hidden;
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+/* Vertical margin, padding */
+
+.p-0    {padding: 0!important}
+.pt-0   {padding-top:0!important}
+.pt-10  {padding-top:10px!important}
+.pt-20  {padding-top:20px!important}
+.pt-30  {padding-top:30px!important}
+.pt-40  {padding-top:40px!important}
+.pt-50  {padding-top:50px!important}
+.pt-60  {padding-top:60px!important}
+.pt-70  {padding-top:70px!important}
+.pt-80  {padding-top:80px!important}
+
+.pb-0   {padding-bottom:0!important}
+.pb-10  {padding-bottom:10px!important}
+.pb-20  {padding-bottom:20px!important}
+.pb-30  {padding-bottom:30px!important}
+.pb-40  {padding-bottom:40px!important}
+.pb-50  {padding-bottom:50px!important}
+.pb-60  {padding-bottom:60px!important}
+.pb-70  {padding-bottom:70px!important}
+.pb-80  {padding-bottom:80px!important}
+
+.m-0   {margin:0 !important}
+.mt-0  {margin-top:0 !important}
+.mt-10 {margin-top:10px !important}
+.mt-20 {margin-top:20px !important}
+.mt-30 {margin-top:30px !important}
+.mt-40 {margin-top:40px !important}
+.mt-50 {margin-top:50px !important}
+.mt-60 {margin-top:60px !important}
+.mt-70 {margin-top:70px !important}
+.mt-80 {margin-top:80px !important}
+
+.mb-0  {margin-bottom:0!important}
+.mb-10 {margin-bottom:10px !important}
+.mb-20 {margin-bottom:20px !important}
+.mb-30 {margin-bottom:30px !important}
+.mb-40 {margin-bottom:40px !important}
+.mb-50 {margin-bottom:50px !important}
+.mb-60 {margin-bottom:60px !important}
+.mb-70 {margin-bottom:70px !important}
+.mb-80 {margin-bottom:80px !important}
+
+.align-center {
+	text-align: center;
+}
+
+h1.header-copy {
+	font-size: $fs-h3s;
+	font-weight: bold;
+	margin-bottom: 1rem;
+	color: $font-color-w;
+}
+.letter {
+	font-size: $fs-h4;
+	color: $font-color-w;
+}
+.home-header {
+	min-height: 35rem;
+//	background-position: top center !important;
+	overflow: hidden;
+//	background-image: linear-gradient(#395ebb, #56388b);
+//	@include background-image(linear-gradient(#395ebb, #56388b));
+	.swg-logo {
+		width: 172px;
+		height: auto;
+	}
+}
+@include breakMd {
+	.home-header {
+		min-height: 20rem;
+//		background: #56388b !important;395ebb
+//		background-image: none;
+		background-image: linear-gradient(#395ebb, #56388b) !important;
+	}
+	.pad {
+		padding: 2rem 1rem;
+	}
+}
+@include breakLg {
+}
+@include breakXl {
+}
+
+
+.home-section {
+	
+}
+
+/* header nav */
+#menu-wrapper {
+	overflow: hidden;
+}
+.custom-wrapper{
+//  background-color: $font-color-w;
+	width: 90vw;
+	margin: 0.5rem auto 1.5rem auto;
+//	margin-bottom: 1.25em;
+	-webkit-font-smoothing: antialiased;
+	height: 5.5em;
+	overflow: hidden;	
+	font-size: $fs-p;
+	color: $font-color-w;
+	
+	@include transition(height 0.3s ease-in-out);
+	&.open {
+		  height: 100%;
+  	}
+	.custom-brand {
+		text-transform: none;
+	}
+	.pure-menu-link {
+		color: $font-color-w;
+		&:hover,&:active,&:focus {
+			
+		}
+	}
+	.logo-c {
+		display: none;
+	}
+	.logo-w {}
+}
+@include breakMd {
+	.custom-wrapper{
+  		background-color: $font-color-w;
+		width: 100vw;
+		margin: 0 auto;
+		height: 3rem;
+		.logo-c {
+			display: inline-block;
+		}
+		.logo-w {
+			display: none;
+		}
+		.pure-menu-link {
+			color: $font-color;
+		}
+	}
+}
+
+.custom-menu-3 {
+  text-align: right;
+}
+
+.custom-toggle {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  display: none;
+  .bar {
+	  background-color: $bg-color-d;
+	  display: block;
+	  width: 1.25rem;
+	  height: 2px;
+	  border-radius: 100px;
+	  position: absolute;
+	  top: 1rem;
+	  right: 0.5rem;
+	  @include transition(all 0.3s ease-in-out);
+	  
+	  &:first-child {
+		  @include transform(translateY(-6px));
+	  }
+  }
+  &.x {
+	  .bar {
+		  @include transform(rotate(45deg));
+		  &:first-child {
+			  @include transform(rotate(-45deg));
+		  }
+	  }
+  }
+}
+
+@include breakMd {
+	.custom-menu-3 {
+	  text-align: right;
+	}
+	.custom-toggle {
+	  display: block;
+	}
+	.custom-can-transform {
+//		text-align: center;
+	}
+}
+
+.is-fixed {
+	position: fixed;
+	top: 0;
+//	left: 0;
+	z-index: 3;
+	height: 4.5rem;
+	width: 100%;
+	background-color: $font-color-w;
+	box-shadow: 0 3px 10px rgba(0,0,0,.2);
+	.pure-menu-link {
+		color: $font-color;
+		&:hover,&:active,&:focus {
+			
+		}
+	}
+	.logo-c {
+		display: inline-block;
+	}
+	.logo-w {
+		display: none;
+	}
+}
+/* header nav end */
+
+.home-section,
+.section,
+.module,
+.module-small {
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+}
+.section {
+	&:nth-child(even) {
+	}
+}
+
+img.section-img {
+	width: 100%;
+	height: auto;
+}
+
+/* footer */
+footer {
+	bottom: 0;
+	position:relative;
+//	position: absolute;
+}
+
+.footer {
+	.footer-content,
+	.sub-footer {
+		color: $font-color;
+		.footer-menu {
+			text-align: center;
+			a {
+//				color:$font-color;
+			}
+		}
+	}
+	.footer-content,
+	.sub-footer {
+//		background-color: #1a2e2b;
+	}
+	.footer-content {
+//		background: lighten($border-color-d, 30%);
+	}
+	.sub-footer {
+//		background: $bg-color-d;
+		text-align: center;
+	}
+	.copyrights {
+		font-size: 0.75rem;
+	}
+}

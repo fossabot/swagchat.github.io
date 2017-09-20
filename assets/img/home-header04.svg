@@ -1,0 +1,29 @@
+<svg id="7aeffe3f-7d94-4e77-8eda-76cd307187ef" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1217">
+  <defs>
+    <style>
+      .\38 1e5efee-83bc-439f-8e63-ae04aa66b438 {
+        fill: none;
+      }
+
+      .\30 d511387-71cc-41d0-8109-09dfdf844765 {
+        clip-path: url(#c1044d5e-a3b9-42a3-a855-41587945c0c7);
+      }
+
+      .f1b47303-fbde-4464-9538-cbf82bbb43bc {
+        fill: url(#b6a39763-ed3b-4c15-8972-6b0bec0ca6eb);
+      }
+    </style>
+    <clipPath id="c1044d5e-a3b9-42a3-a855-41587945c0c7">
+      <rect class="81e5efee-83bc-439f-8e63-ae04aa66b438" x="0.5" y="-0.5" width="1920" height="1217"/>
+    </clipPath>
+    <linearGradient id="b6a39763-ed3b-4c15-8972-6b0bec0ca6eb" data-name="名称未設定グラデーション 7" x1="917.5" y1="-444.73" x2="917.5" y2="969.26" gradientTransform="translate(36.74 -97.6) rotate(6.62)" gradientUnits="userSpaceOnUse">
+      <stop offset="0.4" stop-color="#56388b"/>
+      <stop offset="0.55" stop-color="#4d449a"/>
+      <stop offset="0.77" stop-color="#395ebb"/>
+    </linearGradient>
+  </defs>
+  <title>home-header04</title>
+  <g class="0d511387-71cc-41d0-8109-09dfdf844765">
+    <path class="f1b47303-fbde-4464-9538-cbf82bbb43bc" d="M-70.39-95.74c68-585.66,73.49-25,864.51,66.82s1386.72-642.47,1318.73-56.8S1483.37,777.54,692.34,685.7q-88.22-10.24-171.22-25.54a53.93,53.93,0,0,0-40.21,8.51C290.44,798.92-34.23,898.53-252.9,839.38c-156.3-42.28,131.5-111,222.55-309.42a54.27,54.27,0,0,0-22.19-69.47C-382.63,269.77-113,271.13-70.39-95.74Z"/>
+  </g>
+</svg>

@@ -1,0 +1,49 @@
+<svg id="43afeac8-e379-4adf-a94f-cbfcc1c418bf" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1217 1920">
+  <defs>
+    <style>
+      .\33 ec38720-e6ad-454a-8a83-a9d3139d8912 {
+        fill: none;
+      }
+
+      .f739ce01-9f5c-4b0c-9543-57357fd12d4f {
+        clip-path: url(#e4e85d0d-1f95-49c3-9ade-fa4ae56758f3);
+      }
+
+      .b2b26a82-2cf7-43c5-bea1-dd9b155596a0 {
+        fill: url(#dea2ffa6-62c3-44a1-85e9-3246e95f495b);
+      }
+
+      .\38 8fbf584-e561-4499-a06b-9b1947c4dba9 {
+        fill: url(#2b81c7a4-f39e-43c2-af2f-c3fd5d091afc);
+      }
+
+      .\31 f14da17-e5a5-4410-8a4c-c5b95eab5cab {
+        fill: url(#16496e94-4496-4c08-b850-196b30e97ccf);
+      }
+    </style>
+    <clipPath id="e4e85d0d-1f95-49c3-9ade-fa4ae56758f3">
+      <rect class="3ec38720-e6ad-454a-8a83-a9d3139d8912" x="-352.5" y="351.5" width="1920" height="1217" transform="translate(1567.5 352.5) rotate(90)"/>
+    </clipPath>
+    <linearGradient id="dea2ffa6-62c3-44a1-85e9-3246e95f495b" data-name="名称未設定グラデーション 51" x1="992.89" y1="929" x2="992.89" y2="68" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#189ed8"/>
+      <stop offset="1" stop-color="#5fe075"/>
+    </linearGradient>
+    <linearGradient id="2b81c7a4-f39e-43c2-af2f-c3fd5d091afc" data-name="名称未設定グラデーション 49" x1="235.9" y1="812.52" x2="235.9" y2="1535" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#18449a"/>
+      <stop offset="0.44" stop-color="#722f90"/>
+      <stop offset="0.82" stop-color="#ba1e89"/>
+      <stop offset="1" stop-color="#d61886"/>
+    </linearGradient>
+    <linearGradient id="16496e94-4496-4c08-b850-196b30e97ccf" data-name="名称未設定グラデーション 16" x1="1283.59" y1="1282.25" x2="1283.59" y2="1839" gradientTransform="matrix(-1, 0, 0, 1, 2194.02, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0.1" stop-color="#ff7d33"/>
+      <stop offset="0.41" stop-color="#bf965e"/>
+      <stop offset="0.87" stop-color="#5dbd9f"/>
+    </linearGradient>
+  </defs>
+  <title>section-bg04</title>
+  <g class="f739ce01-9f5c-4b0c-9543-57357fd12d4f">
+    <path class="b2b26a82-2cf7-43c5-bea1-dd9b155596a0" d="M1432.75,444.5c0-238.67-174.92-376.5-439.87-376.5S553,205.83,553,444.5,727.94,821,992.89,821q29.55,0,57.57-2.27a16,16,0,0,1,13,5.3c57.95,61.26,161.43,116.47,236,102.9,53.28-9.7-39.2-50.79-61.68-134.81-2.87-10.73,1.49-22.42,10-26.9C1364.11,703.94,1432.75,594,1432.75,444.5Z"/>
+    <path class="88fbf584-e561-4499-a06b-9b1947c4dba9" d="M-133.19,1128.45c0-200.27,146.77-315.93,369.1-315.93S605,928.18,605,1128.45s-146.77,315.93-369.1,315.93q-24.8,0-48.31-1.91a13.46,13.46,0,0,0-10.88,4.45c-48.63,51.41-135.46,97.73-198,86.34-44.71-8.14,32.89-42.62,51.75-113.12,2.41-9-1.25-18.81-8.39-22.57C-75.6,1346.15-133.19,1253.9-133.19,1128.45Z"/>
+    <path class="1f14da17-e5a5-4410-8a4c-c5b95eab5cab" d="M1194.86,1525.71c0-154.33-113.11-243.46-284.43-243.46S626,1371.38,626,1525.71s113.11,243.46,284.43,243.46q19.11,0,37.23-1.47a10.37,10.37,0,0,1,8.38,3.43c37.47,39.61,104.39,75.31,152.58,66.54,34.45-6.27-25.35-32.84-39.88-87.17-1.86-6.94,1-14.5,6.47-17.39C1150.48,1693.47,1194.86,1622.38,1194.86,1525.71Z"/>
+  </g>
+</svg>

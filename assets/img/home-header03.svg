@@ -1,0 +1,15 @@
+<svg id="2480c8de-aa4b-4477-bff8-a396bff4ef0c" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1217">
+  <defs>
+    <style>
+      .d677d827-c1ea-4cf9-b526-3e50e6c32f8a {
+        fill: url(#11af4a34-654c-46be-8ff6-21a541145464);
+      }
+    </style>
+    <linearGradient id="11af4a34-654c-46be-8ff6-21a541145464" data-name="名称未設定グラデーション 51" x1="282.25" y1="-282.25" x2="1596.25" y2="1031.75" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#189ed8"/>
+      <stop offset="1" stop-color="#5fe075"/>
+    </linearGradient>
+  </defs>
+  <title>home-header03</title>
+  <path class="d677d827-c1ea-4cf9-b526-3e50e6c32f8a" d="M1919,709s-248-67-578-63c-408,5-549,93-939,145C151.86,824.35,0,790,0,790V0H1919Z"/>
+</svg>
