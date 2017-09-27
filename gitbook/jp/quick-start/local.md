@@ -10,4 +10,4 @@ Chat APIとRTM APIを連携させるのはChat APIのコンテナとRTM APIの�
 
 swagchatをdocker-composeを利用してデプロイする為のリポジトリをGithubに用意しておりますのでデプロイはそちらを参考にして下さい。
 
-[swagchat-docker-compose](https://github.com/fairway-corp/swagchat-docker-compose)
+[swagchat-docker-compose](https://github.com/swagchat/docker-compose)

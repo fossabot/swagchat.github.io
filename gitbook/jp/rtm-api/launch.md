@@ -25,16 +25,16 @@ docker run swagchat/rtm-api -port 9101
 
 ### 実行ファイルで直接起動
 
-Githubの[リリースページ](https://github.com/fairway-corp/swagchat-rtm-api/releases)より対象の実行ファイルをダウンロードして実行して下さい。
+Githubの[リリースページ](https://github.com/swagchat/rtm-api/releases)より対象の実行ファイルをダウンロードして実行して下さい。
 
 ```
 # macOSの場合
-./swagchat-realtime_darwin_amd64
+./swagchat-rtm-api_darwin_amd64
 ```
 
 デフォルトでTCPの9100番ポートをバインドするので既に他のサービスで利用されている場合は実行時パラメータにてポート番号を変更する事もできます。
 
 ```
 # macOSの場合
-./swagchat-realtime_darwin_amd64 -port 9101
+./swagchat-rtm-api_darwin_amd64 -port 9101
 ```

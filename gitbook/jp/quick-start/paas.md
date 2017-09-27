@@ -21,6 +21,5 @@ RTM APIを利用してリアルタイム通信を行うにはさらに以下の�
 
 1. <a href="https://heroku.com/deploy?template=https://github.com/fairway-corp/swagchat-rtm-api"><img src="https://www.herokucdn.com/deploy/button.svg" alt="RTM API Deploy"></a>をクリックして下さい
 1. 「Create New App」画面が開くので一番下の「Deploy」ボタンをクリックして下さい（※App Nameは任意で設定して下さい）
-1. デプロイが完了したら（約1分）画面下に「View」ボタンが表示されるのでそれをクリックするとチャットのサンプルデータが入った状態でswagchatのデフォルトの画面が表示されます
-1. さきほど起動したChat APIのSettingsの画面に遷移して下さい
+1. デプロイが完了したら（約30秒）さきほど起動したChat APIのSettingsの画面に遷移して下さい
 1. 以下の環境変数を設定して下さい
