@@ -1,0 +1,976 @@
+/** ***************************************
+
+	TABLE OF CONTENTS
+	---------------------------
+	 1. Typography
+	 	- font-family: ;
+	 	- font-size: ;
+	 		- Mobile & Tablet - font-size: ;
+	 	- letter-spacing: ;
+	 	- line-height: ;
+	 	- text-align: ;
+	 	- text-transform: ;
+	 2. Colors
+	 	- color: ;
+	 	- background-color: ;
+	 	- background: ;
+	 	- border: ;
+	 3. Loader
+	 4. Overlay & Background Layer
+	 5. Content	 	
+	 6. Media Queries
+	 	- Tablets
+	 	- Mobiles
+
+ **  ***************************************/
+
+/******************************************************************
+*******************************		1. TYPOGRAPHY
+******************************************************************/
+
+	/**************************************
+		font-family: ;
+	*************************************/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Source+Sans+Pro:300');
+	body,
+	html
+	{
+		font-family: 'Open Sans', sans-serif; 
+	}
+	.content-details-wrap
+	{
+		font-family: 'Source Sans Pro', 'Open Sans', sans-serif;
+	}
+
+	/**************************************
+		font-size: ;
+	*************************************/
+
+	.main h1
+	{
+		font-size: 50px;
+		font-weight: 800;
+	}
+
+	.main h2 {
+		font-size: 40px;
+		color: white;
+		
+	}
+
+	.main p,	
+	.input-text,
+	.input-textarea,
+	.content p
+	{
+		font-size: 16px;		
+	}
+
+	.subscribe-input-styles::placeholder
+	{
+		font-size: 14px;
+	}
+
+	.social-button-styles
+	{
+		font-size: 10px;
+	}
+
+	.content-close
+	{
+		font-size: 25px;
+	}
+
+	.content-details-wrap
+	{
+		font-size: 15px;
+	}
+
+	.content-details-wrap i
+	{
+		font-size: 40px;
+	}
+
+	.content-message-area p
+	{
+		font-size: 16px;
+	}
+
+		/**************************************
+			TABLET
+		*************************************/
+			@media only screen and (max-width : 991px) {
+
+				.main h1
+				{
+					font-size: 44px;
+				}
+				
+				.main h2 {
+					font-size: 32px;
+				}
+
+				.content-message-area p
+				{
+					font-size: 14px;
+				}
+
+				.main p,
+				.content p
+				{
+					font-size: 14px;		
+				}
+
+				.subscribe-input-styles::placeholder
+				{
+					font-size: 12px;
+				}
+
+				.social-button-styles
+				{
+					font-size: 10px;
+				}
+
+				.content-details-wrap
+				{
+					font-size: 14px;
+				}
+
+				.content-details-wrap h4
+				{
+					font-size: 16px;
+				}
+
+			}
+
+		/**************************************
+			MOBILE
+		*************************************/
+			@media only screen and (max-width : 767px) {
+
+				.main h1
+				{
+					font-size: 44px;
+				}
+				
+				.main h2 {
+					font-size: 32px;
+				}
+
+				.main p,
+				.content p
+				{
+					font-size: 14px;		
+				}
+
+				.subscribe-input-styles::placeholder
+				{
+					font-size: 12px;
+				}
+
+				.social-button-styles
+				{
+					font-size: 10px;
+				}				
+
+				.content-details-wrap
+				{
+					font-size: 14px;
+				}
+				
+				.content-details-wrap h4
+				{
+					font-size: 16px;
+				}
+
+				.content-message-area p
+				{
+					font-size: 12px;
+				}
+			}
+
+	/**************************************
+		letter-spacing: ;
+	*************************************/
+
+	.main h1
+	{
+/*		letter-spacing: 8px;*/
+		letter-spacing: 0.025em;
+		
+	}
+.main h2 {
+	letter-spacing: 2px;
+}
+
+	.main p,
+	.subscribe-input-styles::placeholder,
+	.social-button-styles,
+	.content-details-wrap span,
+	.msg p	
+	{
+		letter-spacing: 1.3px;
+	}
+
+	.content-details-wrap
+	{
+		letter-spacing: 1.2px;
+	}
+
+	/**************************************
+		line-height: ;
+	*************************************/
+
+	.main p
+	{
+		line-height: 30px;
+	}
+
+	.social-button-styles
+	{
+		line-height: 12px;
+	}
+
+	.content-details-wrap span,
+	.msg p
+	{
+		line-height: 1.5;
+	}
+
+	.content-message-area p
+	{
+		line-height: 1.6;
+	}
+
+	/**************************************
+		text-align: ;
+	*************************************/
+
+	.main,
+	.content
+	{
+		text-align: center;
+	}
+
+
+	/**************************************
+		text-transform: ;
+	*************************************/
+
+	.main h1,
+	.social-button-styles
+	{
+/*		text-transform: uppercase;*/
+	}
+	.main h2 {
+		text-transform: uppercase;
+	}
+
+/******************************************************************
+*******************************		2. COLORS
+******************************************************************/
+
+	/**************************************
+		color: ;
+	*************************************/
+
+	.main h1,
+	.main p,
+	.subscribe-button-styles,
+	.social-button-styles,	
+	.content,
+	.content-close,	
+	.input-textarea,
+	.content-open,	
+	.social-links-styles a:hover
+	{
+		color: white;
+	}
+
+	.subscribe-input-styles,
+	.subscribe-input-styles::placeholder
+	{
+		color: white;
+	}
+
+	.content-details-wrap,
+	.content-details-wrap a,
+	.content-details-wrap a:hover,
+	.content-details-wrap i
+	{
+		color: black;
+	}
+
+.t-color {
+	color: rgb(22, 182, 234);
+}
+
+	/**************************************
+		background-color: ;
+	*************************************/
+
+
+	.main-color
+	{
+		background-color: rgba(14,14,14,0.4);
+	}
+
+#coming-typd {
+	transition: all 1s;
+}
+
+.balloon {
+	background-color: rgba(14,14,14,0.4);
+	height: 75vh;
+	width: 70%;
+	border-radius: 35% 35% 35% 6px;
+	margin: 13vh auto;
+	vertical-align: middle;
+	display: table;
+	
+}
+
+.typed-cursor {
+	color: white;
+}
+
+	.subscribe-input-styles
+	{
+    	background-color: rgba(175, 175, 175, 0.1);		
+	}
+
+	#loader-wrap
+	{
+		background-color: #171717;
+	}
+
+	.msg
+	{
+		background-color: rgba(14,14,14,0.4);
+	}
+
+	.content-details-wrap
+	{		
+		background-color: rgba(255,255,255,0);
+	}
+
+	.content-details-color
+	{
+		background-color: rgba(255,255,255,0.8);
+	}
+
+	/**************************************
+		border: ;
+	*************************************/
+
+	.subscribe-button-styles
+	{
+	    border: 1px solid rgba(244, 244, 244, 0.3);
+	    border-left: none;    
+	}
+
+	.subscribe-input-styles
+	{
+	    border: 1px solid rgba(244, 244, 244, 0.3);
+	}
+
+	.social-links-styles li
+	{
+		border-right: 1px solid rgba(241,241,241,0.4);
+	}
+
+	.social-links-styles li:last-child
+	{
+		border-right: none;
+	}
+
+	.content-details-wrap-item
+	{
+		border-right: 1px solid rgba(20,20,20,0.4); 
+	}
+
+	.content-details-wrap-item:last-child
+	{
+		border-right: none;
+	}
+
+/******************************************************************
+*******************************		3. LOADING
+******************************************************************/
+
+	#loader-wrap
+	{
+		display: table;
+		position: fixed;
+		width: 100vw;
+		height: 100vh;		
+		z-index: 4;
+		animation-duration: 1s;
+	}
+
+	#loader
+	{
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.spinner 
+	{
+		opacity: 1;
+		margin: 100px auto;
+		width: 60px;
+		height: 60px;
+		position: relative;
+		text-align: center;
+		transition: all 1s;
+		-webkit-animation: sk-rotate 2.0s infinite linear;
+		animation: sk-rotate 2.0s infinite linear;
+	}
+
+	.dot1, .dot2 
+	{
+		width: 45%;
+		height: 45%;
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		background-color: #999;
+		border-radius: 100%;
+
+		-webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+		animation: sk-bounce 2.0s infinite ease-in-out;
+	}
+
+	.dot2 
+	{
+		top: auto;
+		bottom: 0;
+		-webkit-animation-delay: -1.0s;
+		animation-delay: -1.0s;
+		}
+
+		@-webkit-keyframes sk-rotate { 100% { -webkit-transform: rotate(360deg) }}
+		@keyframes sk-rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+
+		@-webkit-keyframes sk-bounce {
+		0%, 100% { -webkit-transform: scale(0.0) }
+		50% { -webkit-transform: scale(1.0) }
+		}
+
+		@keyframes sk-bounce {
+		0%, 100% { 
+		transform: scale(0.0);
+		-webkit-transform: scale(0.0);
+		} 50% { 
+		transform: scale(1.0);
+		-webkit-transform: scale(1.0);
+		}
+	}
+
+/******************************************************************
+*******************************		4. OVERLAY & BACKGROUND LAYER
+******************************************************************/
+
+	#background-effect
+	{	
+		position: fixed;
+		height: 100vh;
+		width: 100vw;		
+		top: 0;
+		left: 0;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		z-index: -2;
+	}
+
+	/*  Cloud Effect canvas class*/
+	#background-effect canvas 
+	{
+		position: fixed;
+		width: 100%;
+		height: 100%; 
+	}
+
+	.overlay
+	{
+		position: fixed;
+		height: 100vh;
+		width: 100vw;
+		z-index: -1;
+		background-color: rgba(38, 38, 38, 0.5);
+		transition: all 1s;
+	}
+
+	.overlay-one
+	{		
+		background-color: rgba(38, 38, 38, 0.9);
+	}
+
+/******************************************************************
+*******************************		5. CONTENT
+******************************************************************/
+
+	body,
+	html
+	{
+		margin: 0 auto;
+		padding: 0;
+		overflow: hidden;
+	}
+
+	*::-webkit-scrollbar,
+  	*::-webkit-scrollbar 
+  	{
+    	width: 5px; 
+    }
+
+  	*::-webkit-scrollbar-track,
+  	*::-webkit-scrollbar-track 
+  	{
+    	background: #444; 
+    }
+
+  	*::-webkit-scrollbar-thumb,
+  	*::-webkit-scrollbar-thumb 
+  	{
+    	background: rgba(14,14,14,0.4); 
+    }
+
+	.main,
+	#loader-wrap
+	{
+		display: table;
+		height: 100vh;
+	}
+
+	#loader,
+	.valign
+	{
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	/**************************************
+		MAIN SECTION
+	**************************************/	
+	.main
+	{
+		visibility: hidden;
+		height: 100vh;
+		transition: all 1s;
+		overflow-y: auto;
+	}
+
+	.logo img
+	{
+		width: 160px;
+	}
+
+	.main h1
+	{
+		padding: 10px 10px 20px 10px;
+	}
+
+	.main p
+	{
+/*		padding: 0 10px 15px;*/
+		padding: 0 10px 0px 0;
+	}
+
+	input:focus,
+	button:focus 
+	{
+	    outline: none;
+	}
+
+	.subscribe-button-styles
+	{
+	    padding: 13px 40px;
+	    transition: all 0.5s;
+	}
+
+	.subscribe-input-styles
+	{
+		width: 300px;
+		padding: 13px 15px;
+		margin-right: -4px;
+	    transition: all 0.5s;
+	}
+
+	.social-links-styles
+	{
+	    display: table;
+	    table-layout: fixed;
+		width: 300px;
+		padding: 0;
+		margin: 0 auto;
+		margin-top: 25px;
+	}
+
+	.social-links-styles li
+	{
+		display: table-cell;
+		text-decoration: none;
+	}
+
+	.social-button-styles
+	{	
+		display: block;
+		height: 24px;
+		padding: 10px 0 20px;
+	}
+
+	.content-open
+	{
+		display: inline-block;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-size: 15px;
+		line-height: 24px;
+		padding: 8px 20px;
+		cursor: pointer;
+		background: none;
+		border: 1px solid #FFF;
+		transition: all 0.5s;
+		margin-top: 25px; 
+	}
+
+	/**************************************
+		CONTACT SECTION
+	**************************************/	
+
+	.content
+	{
+		position: absolute;
+		overflow: hidden;
+		top: 100vh;
+		height: 100vh;
+		padding: 0;
+		transition: all 1s;
+	}
+
+	.msg
+	{
+		position: absolute;
+		top: 0;
+
+		padding: 0;
+		min-height: 100vh;
+	}
+
+	.content-message-area
+	{		
+		visibility: hidden;
+		float: left;
+		width: 100%;
+		padding-top: 10vh;
+	}
+
+	.content-hr
+	{
+		height: 1px;
+		width: 50%;
+		max-width: 200px;
+		border: none !important;
+		background-color: #777;
+	}
+
+	.content-social
+	{
+		list-style: none;
+		padding: 20px 0;
+		font-size: 22px;
+		margin: 0 auto;
+	}
+
+	.content-social li
+	{
+		width: 50px;
+		display: inline-block;
+		padding: 0 15px;
+		font-size: 22px;
+	}
+
+	.content-social i
+	{
+		transition: all 1s;
+	}
+
+	.content-social i:hover
+	{
+		color: white !important;
+	}
+	.content-message-area h1
+	{
+	    margin: 30px auto 20px;
+	}
+
+	.content-message-area p
+	{
+	    max-width: 600px;
+	    margin: 0 auto;
+	}
+
+	.content-close
+	{
+		position: fixed;
+		top: 0;
+		right: 0;
+		display: none;
+		width: 50px;
+		height: 50px;
+		line-height: 25px;
+		z-index: 1;
+		cursor: pointer;		
+		padding: 12px 0;
+		opacity: 0;
+		transition: all 1s;
+	}
+
+	.content-one
+	{
+		top: 0;
+	}
+
+	.content-details-wrap
+	{
+		position: relative;
+		height: auto;
+		margin: 0 auto;
+		opacity: 0;
+		transition: all 1s;
+	}
+
+	.content-details-wrap-item
+	{
+		padding: 20px 0 30px;
+	}
+
+	.content-details-wrap-one
+	{
+		top: -50vh;
+	}
+	.content-details-wrap-two
+	{
+		top: 0;
+	}
+
+		/**************************************
+			TABLET
+		*************************************/
+			@media only screen and (max-width : 991px) {
+
+				.main
+				{
+					display: block;
+					overflow: auto;
+					padding: 0;
+				}
+
+				.valign
+				{
+/*					display: block;*/
+					padding: 60px 0 40px;
+				}
+
+				.main h1
+				{
+					font-size: 44px;
+				}
+
+				.main p
+				{
+					font-size: 14px;		
+				}
+
+				.balloon { 
+				}
+				
+				.content
+				{
+					padding: 0;
+					overflow: auto;
+				}
+
+				.subscribe-input-styles::placeholder
+				{
+					font-size: 12px;
+				}
+
+				.social-button-styles
+				{
+					font-size: 10px;
+				}
+
+				.content-message-area p
+				{
+					text-align: center;
+				    max-width: 80%;
+				    margin: 0 auto;
+				    padding: 0 5px;
+				}
+
+				.content-social
+				{
+					padding: 20px 0 0;
+				}
+
+				.content-social li
+				{
+					padding: 0px 20px;
+					width: 60px;
+				}
+
+			}
+
+		/**************************************
+			MOBILE
+		*************************************/
+			@media only screen and (max-width : 767px) {				
+				
+				.main
+				{
+					padding: 0;
+				}
+
+				.valign
+				{
+					padding: 30px 0 20px;
+				}
+
+				.logo img
+				{
+					width: 130px;
+				}
+
+				.subscribe-input-styles
+				{
+					width: 90%;
+					margin-right: 0;
+					max-width: 450px;
+				}
+
+				.social-links-styles
+				{
+					width: 270px;
+					margin: 40px auto;
+				}
+
+				.subscribe-button-styles
+				{
+					width: 50%;
+					max-width: 160px;
+					border-right: none;
+					border-top: none;
+					display: block;
+					margin: 15px auto;
+				}
+
+				.content-open
+				{
+					margin-top: 0;
+				}
+
+				.main h1
+				{
+					padding: 5px;
+				}
+
+				.main p
+				{
+					padding: 5px;
+				}
+
+				.main form
+				{
+					margin-top: 20px;
+				}
+
+				.balloon {
+					background: none;
+					border-radius: 0;
+					height: 100vh;
+					margin: 0 auto;
+				}
+				
+				.content
+				{
+					padding: 0;
+				}
+
+				.details-item
+				{
+					width: 145px;
+					height: auto;
+					margin: 0 auto;
+				}
+
+				.details-item h4
+				{					
+					width: 100px;
+					text-align: center;
+					font-size: 14px;
+					font-weight: 600;
+					padding: 0;
+					padding-right: 25px;
+					padding-bottom: 10px;
+					margin: 0;
+					line-height: 50px;
+				}
+
+				.details-item i
+				{
+					width: 45px;
+					text-align: center;
+					padding: 0;
+					padding-bottom: 10px;
+					margin: 0;
+				}
+
+				.content-details-wrap-item span
+				{
+					width: 100%;
+					margin: 0 auto;
+					text-align: center;
+				}
+
+				.content-details-wrap
+				{
+					width: 100%;
+					padding: 0;
+				}
+
+				.content-details-wrap-item span,
+				.content-details-wrap-item a
+				{
+					padding: 3px;
+				}
+
+				.content-details-wrap-item
+				{					
+					border-bottom: 1px solid rgba(20,20,20,0.4);
+					border-right: none;
+					padding: 20px 0;
+				}
+
+				.content-details-wrap-item:last-child
+				{
+					border-bottom: none;
+				}
+
+				.content-message-area
+				{
+					padding: 40px 15px;
+				}
+
+			}
+
+			#copy-typd {
+				margin: 20px 0;
+				
+			}
+			#coming-typd {
+/*				visibility: visible;*/
+/*				display: none;*/
+			}
