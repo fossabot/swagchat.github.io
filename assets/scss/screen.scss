@@ -17,7 +17,7 @@ $site-width: 1280px;
 /* colors */
 $font-color: #222;
 $font-color-w: #fefefe;
-$link-color: #333;
+$link-color: #6415B7;
 $border-color-w: #dedede;
 $border-color-d: #212121;
 $bg-color-ow: #f9f9f9;
@@ -28,7 +28,9 @@ $border-color-lg: #79D887;
 $border-color-p: #750FD6;
 $border-color-dp: #6415B7;
 $border-color-y: #EAC113;
+$border-color-og: #EAAA21;
 $font-color-red: #a94442;
+$bg-color-pg : #DAD5E0;
 /* width, radius */
 $radius-xl: 12px;
 $radius-l: 9px;
@@ -62,25 +64,21 @@ $fs-p : 1rem;
 
 /*mixin*/
 @mixin breakSm {
-	/*	@media screen and (min-width: 35.5em)*/
   @media screen and (max-width: 35.499em) {
     @content;
   }
 }
 @mixin breakMd {
-	/*@media screen and (min-width: 48em)*/
   @media screen and (max-width: 47.999em) {
     @content;
   }
 }
 @mixin breakLg {
-	/*@media screen and (min-width: 64em)*/
   @media screen and (max-width: 63.999em) {
     @content;
   }
 }
 @mixin breakXl {
-	/*@media screen and (min-width: 80em)*/
   @media screen and (max-width: 79.999em) {
     @content;
   }
@@ -135,55 +133,62 @@ main {
 }
 a {
     text-decoration: none;
-	color: darken($link-color,20%);
+	color: darken($link-color, 5%);
     @include transition(color 0.3s ease-in);
-    &:hover {
+    &:hover,&:focus,&:active {
         text-decoration: none;
-        color: lighten($link-color, 20%);
+        color: $link-color;
 		background-color: rgba(0,0,0,0) !important;
     }
 }
 
 h1,h2,h3,h4,h5,h6 {
     font-family: $font-family;
-    line-height: 1.25;
+    line-height: 1.5rem;
     font-weight: 200;
-	margin-top: 0.75rem;
+	margin-top: 1.75rem;
 	margin-bottom: 1.5rem;
 }
 .h1, h1 {
 	font-size: $fs-h1;
+	line-height: $fs-h1 * 1.25;
 }
 .h2, h2 {
 	font-size: $fs-h2;
+	line-height: $fs-h2 * 1.5;
 }
 .h3, h3 {
 	font-size: $fs-h3;
+	line-height: $fs-h3 * 1.5;
 }
 .h4, h4 {
 	font-size: $fs-h4;
+	line-height: $fs-h4 * 1.5;
 }
 .h5, h5 {
 	font-size: $fs-h5;
+	line-height: $fs-h5 * 1.5;
 }
 p {
 	font-size: $fs-p;
+	line-height: $fs-p * 1.75;
+	margin: 1.25rem 0 1.5rem;
 }
 .h6, h6 {
 	font-size: $fs-h6;
 }
 #scroll-to-top {
     position: fixed;
-    right: 2rem;
-    bottom: 2rem;
+    right: 2.5rem;
+    bottom: 2.5rem;
     font-size: 1rem;
     cursor: pointer;
     outline: 0px none;
     z-index: 100;
-    color: rgba(120, 120, 120, 0.5);
+    color: rgba(116, 116, 116, 0.5);
     @include transition(color 0.3s ease-in-out 0s);
     &:hover {
-        color: rgba(127, 127, 127, 0.75);
+        color: rgba(132, 132, 132, 0.75);
     }
 }
 
@@ -191,6 +196,7 @@ p {
 	width: 95%;
 	margin: 0 auto;
 	overflow: hidden;
+//	background-color: rgba(248,248,248,0.5);
 }
 .container-header {
 	width: 90%;
@@ -273,23 +279,50 @@ h1.header-copy {
 .letter {
 	font-size: $fs-h4;
 	color: $font-color-w;
+	margin-bottom: $fs-h3;
 }
 .home-header {
 	min-height: 35rem;
-//	background-position: top center !important;
+//	background-position: center !important;
 	overflow: hidden;
-//	background-image: linear-gradient(#395ebb, #56388b);
-//	@include background-image(linear-gradient(#395ebb, #56388b));
 	.swg-logo {
 		width: 172px;
 		height: auto;
+	}
+	.header-link-list {
+		list-style: outside none none;
+		margin: 3rem 0 2rem;
+		overflow: hidden;
+		.header-link-item {
+			float: left;
+			margin-left: 1.5rem;
+			padding: 1.25rem 1.25rem 1.25rem 0;
+			&:first-child {
+				margin-left: 0;
+			}
+			.header-link {
+//				color: $font-color-w;
+				letter-spacing: $letter-space-l;
+				overflow: hidden;
+				padding: 1rem;
+				border-radius: $radius-m;
+				background-color: $border-color-og;
+//				border: 1px solid $font-color-w;
+				@include transition(color,background-color 0.3s ease-in-out 0s);
+				&:hover,&:focus,&:active {
+					background-color: darken($border-color-og, 5%) !important;
+					color: darken($link-color, 10%);
+				}
+				i {
+					margin-right: 1.75rem;
+				}
+			}
+		}
 	}
 }
 @include breakMd {
 	.home-header {
 		min-height: 20rem;
-//		background: #56388b !important;395ebb
-//		background-image: none;
 		background-image: linear-gradient(#395ebb, #56388b) !important;
 	}
 	.pad {
@@ -303,7 +336,6 @@ h1.header-copy {
 
 
 .home-section {
-	
 }
 
 /* header nav */
@@ -311,10 +343,8 @@ h1.header-copy {
 	overflow: hidden;
 }
 .custom-wrapper{
-//  background-color: $font-color-w;
 	width: 90vw;
 	margin: 0.5rem auto 1.5rem auto;
-//	margin-bottom: 1.25em;
 	-webkit-font-smoothing: antialiased;
 	height: 5.5em;
 	overflow: hidden;	
@@ -401,19 +431,17 @@ h1.header-copy {
 	  display: block;
 	}
 	.custom-can-transform {
-//		text-align: center;
 	}
 }
 
 .is-fixed {
 	position: fixed;
 	top: 0;
-//	left: 0;
 	z-index: 3;
 	height: 4.5rem;
 	width: 100%;
 	background-color: $font-color-w;
-	box-shadow: 0 3px 10px rgba(0,0,0,.2);
+	box-shadow: 0 3px 3px rgba(0,0,0,.1);
 	.pure-menu-link {
 		color: $font-color;
 		&:hover,&:active,&:focus {
@@ -438,23 +466,54 @@ h1.header-copy {
 	background-size: cover;
 }
 .section {
+	margin: 3rem 0;
+	
 	&:nth-child(even) {
 	}
+}
+.section-bg-w {
+	background-color: rgba(250,250,250,0.25);
+}
+
+.wrapper-section {
+	margin: 5rem 0;
 }
 
 img.section-img {
 	width: 100%;
 	height: auto;
 }
+img.mock-image {
+	width: 75%;
+	height: auto;
+}
+
+ul.package-list {
+	list-style: outside none none;
+	display: table;
+	
+	li {
+		display: table-cell;
+		width: 33.333%;
+		vertical-align: middle;
+		&:last-child {
+		}
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}
 
 /* footer */
 footer {
 	bottom: 0;
 	position:relative;
-//	position: absolute;
 }
 
 .footer {
+	background-color: $bg-color-pg;
+	padding: 2rem 0;
 	.footer-content,
 	.sub-footer {
 		color: $font-color;
@@ -467,13 +526,10 @@ footer {
 	}
 	.footer-content,
 	.sub-footer {
-//		background-color: #1a2e2b;
 	}
 	.footer-content {
-//		background: lighten($border-color-d, 30%);
 	}
 	.sub-footer {
-//		background: $bg-color-d;
 		text-align: center;
 	}
 	.copyrights {

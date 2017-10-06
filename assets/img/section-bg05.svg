@@ -1,0 +1,51 @@
+<svg id="ed270179-059d-4b65-a36a-efb7717c5882" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1217 1920">
+  <defs>
+    <style>
+      .\37 0df749a-44b4-443d-9e8c-d1db9b834690 {
+        fill: none;
+      }
+
+      .e4c9f4d7-045e-4d2d-8ff5-f15d44bf27a7 {
+        clip-path: url(#36f6cd7c-0e42-4596-805c-75b00715c896);
+      }
+
+      .\30 a98d86c-e6c6-4720-b502-9d8d4ef52086 {
+        fill: url(#8e15812a-9cf7-4fc2-9291-73046a15b335);
+      }
+
+      .cba798e5-cfc2-441c-a70b-b8453ff1fabf {
+        fill: url(#d472d956-156e-409b-9edd-6a78aaa4ce0f);
+      }
+
+      .\37 8108e2f-c26b-445b-9209-153e435f3e86 {
+        fill: url(#e81eb9a3-a1c8-4fb3-bb22-3c990d8be8d3);
+      }
+    </style>
+    <clipPath id="36f6cd7c-0e42-4596-805c-75b00715c896">
+      <rect class="70df749a-44b4-443d-9e8c-d1db9b834690" x="-352" y="351" width="1920" height="1217" transform="translate(1567.5 351.5) rotate(90)"/>
+    </clipPath>
+    <linearGradient id="8e15812a-9cf7-4fc2-9291-73046a15b335" data-name="名称未設定グラデーション 51" x1="1031.44" y1="884.5" x2="1031.44" y2="51" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#189ed8"/>
+      <stop offset="1" stop-color="#5fe075"/>
+    </linearGradient>
+    <linearGradient id="d472d956-156e-409b-9edd-6a78aaa4ce0f" data-name="名称未設定グラデーション 49" x1="112.89" y1="861" x2="112.89" y2="1471.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#18449a"/>
+      <stop offset="0.44" stop-color="#722f90"/>
+      <stop offset="0.82" stop-color="#ba1e89"/>
+      <stop offset="1" stop-color="#d61886"/>
+    </linearGradient>
+    <linearGradient id="e81eb9a3-a1c8-4fb3-bb22-3c990d8be8d3" data-name="名称未設定グラデーション 212" x1="-2267.91" y1="1311.75" x2="-2267.91" y2="1868.5" gradientTransform="matrix(-1, 0, 0, 1, -1238.98, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0.07" stop-color="#ff8d41"/>
+      <stop offset="0.19" stop-color="#f0964a"/>
+      <stop offset="0.41" stop-color="#c8ad62"/>
+      <stop offset="0.71" stop-color="#88d288"/>
+      <stop offset="0.92" stop-color="#58eea4"/>
+    </linearGradient>
+  </defs>
+  <title>swg_section-bg05</title>
+  <g class="e4c9f4d7-045e-4d2d-8ff5-f15d44bf27a7">
+    <path class="0a98d86c-e6c6-4720-b502-9d8d4ef52086" d="M1457.25,415.48c0-231-169.33-364.48-425.82-364.48S605.62,184.43,605.62,415.48,774.95,780,1031.44,780q28.61,0,55.73-2.2a15.52,15.52,0,0,1,12.55,5.13c56.1,59.3,156.27,112.75,228.43,99.61,51.58-9.39-37.95-49.17-59.71-130.5-2.78-10.39,1.44-21.7,9.68-26C1390.8,666.63,1457.25,560.21,1457.25,415.48Z"/>
+    <path class="cba798e5-cfc2-441c-a70b-b8453ff1fabf" d="M-199,1128c0-169.23,124-267,311.89-267s311.89,97.73,311.89,267-124,267-311.89,267q-21,0-40.82-1.61a11.37,11.37,0,0,0-9.19,3.76c-41.09,43.44-114.46,82.58-167.31,73-37.78-6.88,27.79-36,43.73-95.59,2-7.61-1.05-15.9-7.09-19.07C-150.33,1311.92-199,1234-199,1128Z"/>
+    <path class="78108e2f-c26b-445b-9209-153e435f3e86" d="M1313.36,1555.21c0-154.33-113.11-243.46-284.43-243.46S744.5,1400.88,744.5,1555.21s113.11,243.46,284.43,243.46q19.11,0,37.23-1.47a10.37,10.37,0,0,1,8.38,3.43c37.47,39.61,104.39,75.31,152.58,66.54,34.45-6.27-25.35-32.84-39.88-87.17-1.86-6.94,1-14.5,6.47-17.39C1269,1723,1313.36,1651.88,1313.36,1555.21Z"/>
+  </g>
+</svg>

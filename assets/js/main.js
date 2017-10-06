@@ -11,7 +11,30 @@
 //		});
 		
 		window.sr = ScrollReveal();
-//		sr.reveal('.hoge', {});
+		
+		/* ---------------------------------------------- /*
+		 * Scroll Animation
+		 /* ---------------------------------------------- */
+
+		var upperLimit = 300;
+		var scrollLinkElm = 'a#scroll-to-top';
+		var scrollSpeed = "slow";
+		var scrollStyle = "swing";
+
+		jQuery(scrollLinkElm).hide();
+		jQuery(window).scroll(function(){
+			var scrollTop = jQuery(document).scrollTop();
+			if(scrollTop > upperLimit) {
+				jQuery(scrollLinkElm).stop().fadeTo(300,1).show();
+			} else {
+				jQuery(scrollLinkElm).stop().fadeTo(300,0).hide();
+			}
+		});
+		jQuery(scrollLinkElm).on('tap', function(e){
+			e.preventDefault();
+			jQuery('html, body').stop().animate({scrollTop:0}, scrollSpeed, scrollStyle);
+			return false;
+		});
 	});
 	(function (window, document) {
 	  var menu = document.getElementById('menu'),
@@ -92,8 +115,6 @@
 		}
 	});
 	
-	
-	
 	var homeSection = $('.home-section'),
 		width = Math.max($(window).width(), window.innerWidth),
         mobileTest  = false;
@@ -111,28 +132,73 @@
 			$(this).css('background-image', 'url(' + $(this).attr('data-background') + ')');
 		}
 	});
-	/* ---------------------------------------------- /*
-         * Home section height
-         /* ---------------------------------------------- */
-
-//	function buildHomeSection(homeSection) {
-//		if (homeSection.length > 0) {
-//			if (homeSection.hasClass('home-full-height')) {
-//				homeSection.height($(window).height());
-//			} else {
-//				homeSection.height($(window).height() * 0.8);
-//			}
-//		}
-//	}
-	/* ---------------------------------------------- /*
-	 * Scroll Animation
-	 /* ---------------------------------------------- */
-
-	$('.section-scroll').bind('click', function(e) {
-		var anchor = $(this);
-		$('html, body').stop().animate({
-			scrollTop: $(anchor.attr('href')).offset().top - 50
-		}, 1000);
-		e.preventDefault();
-	});
+	
 })(jQuery);
+/* jQuery Tap Event */
+(function($, window) {
+	"use strict";
+
+	var RANGE = 5,
+		events = ["click", "touchstart", "touchmove", "touchend"],
+		handlers = {
+			click: function(e) {
+				if(e.target === e.currentTarget)
+					e.preventDefault();
+			},
+			touchstart: function(e) {
+				this.jQueryTap.touched = true;
+				this.jQueryTap.startX = e.touches[0].pageX;
+				this.jQueryTap.startY = e.touches[0].pageY;
+			},
+			touchmove: function(e) {
+				if(!this.jQueryTap.touched) {
+					return;
+				}
+
+				if(Math.abs(e.touches[0].pageX - this.jQueryTap.startX) > RANGE ||
+				   Math.abs(e.touches[0].pageY - this.jQueryTap.startY) > RANGE) {
+					this.jQueryTap.touched = false;
+				}
+			},
+			touchend: function(e) {
+				if(!this.jQueryTap.touched) {
+					return;
+				}
+
+				this.jQueryTap.touched = false;
+				$.event.dispatch.call(this, $.Event("tap", {
+					originalEvent: e,
+					target: e.target,
+					pageX: e.changedTouches[0].pageX,
+					pageY: e.changedTouches[0].pageY
+				}));
+			}
+		};
+
+	$.event.special.tap = "ontouchend" in window? {
+		setup: function() {
+			var thisObj = this;
+			
+			if(!this.jQueryTap) {
+				Object.defineProperty(this, "jQueryTap", {value: {}});
+			}
+			$.each(events, function(i, ev) {
+				thisObj.addEventListener(ev, handlers[ev], false);
+			});
+		},
+		teardown: function() {
+			var thisObj = this;
+			
+			$.each(events, function(i, ev) {
+				thisObj.removeEventListener(ev, handlers[ev], false);
+			});
+		}
+	}: {
+		bindType: "click",
+		delegateType: "click"
+	};
+
+	$.fn.tap = function(data, fn) {
+		return arguments.length > 0? this.on("tap", null, data, fn): this.trigger("tap");
+	};
+})(jQuery, this);
