@@ -666,83 +666,83 @@ h1.header-copy {
 .home-section,
 .section,
 .module,
-.module-small {
+.module-small,
+.footer {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
 }
 
-/* line 468, ../scss/screen.scss */
+/* line 469, ../scss/screen.scss */
 .section {
   margin: 3rem 0;
 }
 
-/* line 474, ../scss/screen.scss */
+/* line 475, ../scss/screen.scss */
 .section-bg-w {
   background-color: rgba(250, 250, 250, 0.25);
 }
 
-/* line 478, ../scss/screen.scss */
+/* line 479, ../scss/screen.scss */
 .wrapper-section {
   margin: 5rem 0;
 }
 
-/* line 482, ../scss/screen.scss */
+/* line 483, ../scss/screen.scss */
 img.section-img {
   width: 100%;
   height: auto;
 }
 
-/* line 486, ../scss/screen.scss */
+/* line 487, ../scss/screen.scss */
 img.mock-image {
   width: 75%;
   height: auto;
 }
 
-/* line 491, ../scss/screen.scss */
+/* line 492, ../scss/screen.scss */
 ul.package-list {
   list-style: outside none none;
   display: table;
 }
-/* line 495, ../scss/screen.scss */
+/* line 496, ../scss/screen.scss */
 ul.package-list li {
   display: table-cell;
   width: 33.333%;
   vertical-align: middle;
 }
-/* line 501, ../scss/screen.scss */
+/* line 502, ../scss/screen.scss */
 ul.package-list li img {
   width: 100%;
   height: auto;
 }
 
 /* footer */
-/* line 509, ../scss/screen.scss */
+/* line 510, ../scss/screen.scss */
 footer {
   bottom: 0;
   position: relative;
 }
 
-/* line 514, ../scss/screen.scss */
+/* line 515, ../scss/screen.scss */
 .footer {
-  background-color: #DAD5E0;
   padding: 2rem 0;
 }
-/* line 517, ../scss/screen.scss */
+/* line 518, ../scss/screen.scss */
 .footer .footer-content,
 .footer .sub-footer {
-  color: #222;
+  color: #fefefe;
 }
-/* line 520, ../scss/screen.scss */
+/* line 521, ../scss/screen.scss */
 .footer .footer-content .footer-menu,
 .footer .sub-footer .footer-menu {
   text-align: center;
 }
-/* line 532, ../scss/screen.scss */
+/* line 533, ../scss/screen.scss */
 .footer .sub-footer {
   text-align: center;
 }
-/* line 535, ../scss/screen.scss */
+/* line 536, ../scss/screen.scss */
 .footer .copyrights {
   font-size: 0.75rem;
 }
