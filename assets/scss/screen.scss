@@ -460,7 +460,8 @@ h1.header-copy {
 .home-section,
 .section,
 .module,
-.module-small {
+.module-small,
+.footer {
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: cover;
@@ -512,11 +513,11 @@ footer {
 }
 
 .footer {
-	background-color: $bg-color-pg;
+//	background-color: $bg-color-pg;
 	padding: 2rem 0;
 	.footer-content,
 	.sub-footer {
-		color: $font-color;
+		color: $font-color-w;
 		.footer-menu {
 			text-align: center;
 			a {
