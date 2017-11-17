@@ -216,7 +216,7 @@
 		startDelay: 1000,
 		typeSpeed: 60,
 		showCursor: false,
-		strings: ["<p>Give all the conversations to App.<br>SDK, RTM-API and UIKit for Chat. ^450\n <br>October 2017</p> ^600\n <h2>Coming <span class='t-color'>soon</span></h2>"],
+		strings: ["<p>Give all the conversations to App.<br>SDK, RTM-API and UIKit for Chat. ^450\n <br>NOVEMBER 2017</p> ^600\n <h2>Coming <span class='t-color'>soon</span></h2>"],
 		contentType: 'html',
 		onComplete: function(self){
 			self.stop();
